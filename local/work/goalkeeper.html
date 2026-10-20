@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goalkeeper</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="A voice-first assistant for Android that keeps your whole day in one place. I designed it and built it myself with Claude, and it&#x27;s in testing now.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://aarya.wtf/work/goalkeeper">
+<meta property="og:site_name" content="Aarya Shah">
+<meta property="og:title" content="Goalkeeper — Aarya Shah">
+<meta property="og:description" content="A voice-first assistant for Android that keeps your whole day in one place. I designed it and built it myself with Claude, and it&#x27;s in testing now.">
+<meta property="og:image" content="https://aarya.wtf/work/og/goalkeeper.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Goalkeeper, with its stamp, on a red gingham mat">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Goalkeeper — Aarya Shah">
+<meta name="twitter:description" content="A voice-first assistant for Android that keeps your whole day in one place. I designed it and built it myself with Claude, and it&#x27;s in testing now.">
+<meta name="twitter:image" content="https://aarya.wtf/work/og/goalkeeper.jpg">
+<script>/[?&]embed/.test(location.search)&&document.documentElement.classList.add("embed");</script>
+<!-- opened on its own, this page is the letter's address: people go to the picnic, with it open; link previews still read this page -->
+<script>!/[?&](embed|minimal)/.test(location.search)&&window.top===window&&location.replace("/#goalkeeper");</script>
+<!-- opened from the minimal portfolio, it stays there: on that paper, in the theme picked there, and every way out leads back to it -->
+<script>if(/[?&]minimal/.test(location.search)){const e=document.documentElement;let t=null;try{t=localStorage.getItem("minimal-theme")}catch{}e.classList.add("minimal"),e.dataset.theme=t==="dark"||t!=="light"&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="/_fonts/124087c784daf12b.css" rel="stylesheet">
+<style>
+  /* One scale for the whole letter:
+     type   h1 48 · h2 40 · h3 24 · body 18 · line 16 · label 14   (700 headings, 600 emphasis, 500 labels, 400 text)
+     space  section 144 · heading to intro 16 · intro to content 48 · inside cards 32 · gaps 24
+     colour ink for headings, ink2 for text, line for rules, cream cards; blue only for numbers and the postmark */
+  :root{
+    --paper:#fbf7ec; --cream:#f6f0e0; --ink:#141210; --ink2:#5b554c; --line:#e4d9c2;
+    --blue:#1d3fa6;
+    --col:960px;
+    --ease:cubic-bezier(.4,0,.2,1);
+  }
+  *{box-sizing:border-box}
+  body{margin:0; color:var(--ink); font-family:'Geist',system-ui,sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+  img{display:block; max-width:100%}
+  p, h1, h2, h3, ol, ul, dl, dd{margin:0}
+
+  /* standalone, the letter lies on the picnic mat; inside the picnic (?embed) the real mat shows through */
+  body{background-color:#f9d4d5;
+    background-image:linear-gradient(90deg, rgba(204,26,46,.42) 50%, transparent 50%), linear-gradient(rgba(204,26,46,.42) 50%, transparent 50%);
+    background-size:88px 88px}
+  html.embed, html.embed body{background:transparent}
+  html.minimal, html.minimal body{background:#fbf7ec} html.minimal[data-theme="dark"], html.minimal[data-theme="dark"] body{background:#171512}
+  .back{position:fixed; top:16px; left:16px; z-index:10; display:inline-flex; gap:8px; align-items:center; height:40px; padding:0 16px; border:0; border-radius:999px; background:var(--paper); color:var(--ink); font:500 15px/1 'Geist',system-ui,sans-serif; cursor:pointer;
+    box-shadow:0 1px 2px rgba(70,20,25,.2), 0 8px 20px rgba(70,20,25,.16); transition:transform .2s var(--ease)}
+  .back:hover{transform:translateY(-1px)}
+
+  /* ---------- the letter: one long sheet, everything written on it ---------- */
+  .letter{position:relative; width:min(1180px, calc(100vw - 48px)); margin:max(96px, 14vh) auto 120px; padding:80px 80px 112px; background:var(--paper) var(--grain, none);
+    border-radius:3px; box-shadow:0 1px 1px rgba(70,20,25,.18), 0 10px 24px rgba(70,20,25,.18), 0 40px 80px -30px rgba(70,20,25,.35)}
+  .col{max-width:var(--col); margin:0 auto}
+
+  /* ---------- type ---------- */
+  h1{font-weight:700; font-size:clamp(36px,4.4vw,48px); letter-spacing:-.035em; line-height:1.05}
+  h2{font-weight:700; font-size:clamp(30px,3.6vw,40px); letter-spacing:-.03em; line-height:1.15}
+  h3{font-weight:600; font-size:24px; letter-spacing:-.02em; line-height:1.3}
+  .body{font-size:18px; line-height:1.65; color:var(--ink2)}
+  .body + .body{margin-top:16px}
+  .body b{color:var(--ink); font-weight:600}
+  .label{font-size:14px; font-weight:500; color:var(--ink2)}
+  .num{font-family:'Yellowtail',cursive; color:var(--blue); font-size:32px; line-height:1}
+
+  /* ---------- hero ---------- */
+  .lt-head{display:grid; grid-template-columns:1fr auto; gap:48px; align-items:start}
+  .lt-head h1{margin-top:48px}
+  .lt-head .lede{margin-top:16px; max-width:560px; font-size:20px; line-height:1.55; color:var(--ink2)}
+  .live{margin-top:32px; display:inline-flex; gap:10px; align-items:center; height:52px; padding:0 24px; border-radius:999px; background:var(--ink); color:var(--paper); font-size:16px; font-weight:600; text-decoration:none; transition:transform .2s var(--ease)}
+  .live:hover{transform:translateY(-1px)}
+  /* the stamp, stuck down in the top corner, and the postmark struck across it onto the paper */
+  .lt-slot{position:relative; width:clamp(170px,20vw,240px); margin:-16px -16px 0 0}
+  .lt-stamp{display:block; width:100%; aspect-ratio:440/308; transform:rotate(3deg); filter:drop-shadow(0 1px 1px rgba(60,40,0,.25)) drop-shadow(0 3px 6px rgba(60,40,0,.12))}
+  html.embed .lt-stamp{opacity:0}
+  .lt-pm{position:absolute; right:58%; top:52%; width:118%; pointer-events:none; opacity:0; transform:rotate(-9deg); transform-origin:85% 50%}
+  .lt-pm.on{animation:strike .45s cubic-bezier(.3,1.4,.5,1) both}
+  @keyframes strike{from{opacity:0; transform:rotate(-9deg) scale(1.5)} to{opacity:.88; transform:rotate(-9deg) scale(1)}}
+  .facts{margin-top:64px; display:grid; grid-template-columns:repeat(5, minmax(0,1fr))}
+  .facts{gap:0 32px}
+  .facts div{padding:20px 0 22px}
+  .facts dt{font-size:14px; font-weight:500; color:var(--ink2)}
+  .facts dd{margin-top:6px; font-size:16px; font-weight:600; line-height:1.4}
+
+  .photo{margin-top:48px; border-radius:20px; overflow:hidden; border:1px solid var(--line); background:#f4f3ef}
+  .photo video{display:block; width:100%; aspect-ratio:16/9; object-fit:cover}
+
+  /* ---------- sections ---------- */
+  section{padding-top:144px}
+  .head{max-width:680px}
+  .head .body{margin-top:16px}
+  .after{margin-top:48px}
+  .card{background:var(--cream); border:1px solid var(--line); border-radius:20px; padding:32px}
+  .card h3{font-size:20px}
+  .card p{margin-top:8px; font-size:16px; line-height:1.6; color:var(--ink2)}
+  .grid2{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px}
+  .grid3{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px}
+
+  /* why: the day scattered across apps, gathered into one sentence */
+  .why{display:grid; grid-template-columns:minmax(0,1fr) 360px; gap:64px; align-items:center}
+  .scatter{position:relative; aspect-ratio:1/1; border-radius:20px; background:var(--cream); border:1px solid var(--line); overflow:hidden; container-type:inline-size}
+  .scatter > img{position:absolute; width:18%; border-radius:22%; box-shadow:0 6px 14px rgba(0,0,0,.12); opacity:0; scale:.6; transition:opacity .5s var(--ease), scale .6s var(--ease), filter .6s var(--ease), left .9s var(--ease), top .9s var(--ease), transform .9s var(--ease)}
+  .scatter.s1 > img{opacity:1; scale:1}
+  .scatter.s2 > img{opacity:.28; filter:grayscale(1)}
+  .scatter.s2 > img.src{opacity:0; scale:.5}
+  .scatter.s3 > img{opacity:.5; scale:.5; transform:none!important}
+  .scatter.s3 > img.src{opacity:1; filter:none}
+  /* what each app is saying, rising out of its icon */
+  .ping{position:absolute; left:7%; right:7%; display:flex; gap:3cqw; align-items:center; padding:3cqw 3.6cqw; border-radius:4.4cqw; background:#fff; box-shadow:0 1px 2px rgba(20,18,16,.08), 0 10px 24px -8px rgba(20,18,16,.22);
+    font-size:3.9cqw; line-height:1.35; color:var(--ink2); opacity:0; translate:var(--fx) var(--fy); scale:.4; transition:opacity .45s var(--ease), translate .7s var(--ease), scale .7s var(--ease)}
+  .ping img{width:9cqw; height:9cqw; border-radius:22%; flex:none}
+  .ping span{min-width:0}
+  .ping em{display:block; font-style:normal; font-weight:600; color:var(--ink)}
+  .ping.on{opacity:1; translate:0 0; scale:1}
+  .scatter.s3 .ping{opacity:0; translate:0 var(--gy); scale:.92; transition-duration:.5s, .6s, .6s}
+  /* gathered: the next thing to do, as Goalkeeper's Home says it */
+  .next{position:absolute; left:8%; right:8%; bottom:8%}
+  .next p{margin:0; font-size:7.2cqw; line-height:1.25; font-weight:600; letter-spacing:-.02em; color:var(--ink)}
+  .next p + p{font-size:5.4cqw; line-height:1.35; font-weight:500; letter-spacing:-.01em; color:var(--ink2); margin-top:1.4cqw}
+  .next .w{display:inline-block; opacity:0; filter:blur(6px); translate:0 .25em; transition:opacity .5s var(--ease), filter .5s var(--ease), translate .5s var(--ease); transition-delay:calc(var(--i) * 70ms)}
+  .next img{width:.92em; height:.92em; border-radius:22%; vertical-align:-.12em}
+  .scatter.s3 .next .w{opacity:1; filter:none; translate:0 0}
+  .acts{display:flex; gap:2cqw; align-items:center; margin-top:6cqw; opacity:0; translate:0 8px; transition:opacity .5s var(--ease), translate .5s var(--ease)}
+  .acts span{display:inline-flex; align-items:center; height:11cqw; padding:0 5cqw; border-radius:999px; font-size:4.2cqw; font-weight:600}
+  .acts span:first-child{background:#fff; color:var(--ink); box-shadow:0 0 0 1px var(--line), 0 4px 10px -4px rgba(20,18,16,.18)}
+  .acts span + span{color:var(--ink2); font-weight:500}
+  .scatter.s4 .acts{opacity:1; translate:0 0}
+  @media (prefers-reduced-motion: reduce){ .scatter *, .scatter > img{transition:none!important} }
+
+  /* the bet: a plain table, then the one line that came out of checking Grok */
+  .compare{width:100%; border-collapse:collapse; font-size:16px; line-height:1.55}
+  .compare th{text-align:left; font-size:14px; font-weight:500; color:var(--ink2); padding:0 24px 14px 0; border-bottom:1px solid var(--ink)}
+  .compare td{padding:20px 24px 20px 0; border-bottom:1px solid var(--line); vertical-align:top}
+  .compare td:first-child{width:56%; font-weight:600}
+  .compare td:last-child{color:var(--ink2)}
+  .quote{margin-top:56px; max-width:680px}
+  .quote h3{font-size:24px; line-height:1.3}
+  .quote .body{margin-top:12px; max-width:640px}
+
+  /* promises */
+  .promise .num{display:block; margin-bottom:20px}
+
+  /* ---------- mockup + words, side by side, centred ---------- */
+  .duo{display:grid; grid-template-columns:300px minmax(0,440px); gap:72px; align-items:center; justify-content:center; margin-top:96px}
+  .head + .duo{margin-top:56px}
+  .duo.flip{grid-template-columns:minmax(0,440px) 300px}
+  .duo.flip .shot{order:2}
+  .duo h3{margin-bottom:12px}
+  .shot{display:flex; flex-direction:column; align-items:center; gap:14px}
+  .shot .label{opacity:.8}
+
+  .phone{--k:.71795; position:relative; width:300px; height:626px; border-radius:46px; background:#f4f3ef; border:10px solid var(--ink); overflow:hidden; isolation:isolate; box-shadow:0 30px 50px -20px rgba(20,18,16,.35)}
+  .phone::before{content:""; position:absolute; top:10px; left:50%; width:84px; height:22px; margin-left:-42px; background:var(--ink); border-radius:12px; z-index:5; pointer-events:none}
+  /* each screen is the canvas board itself, played at its own size and scaled into the phone */
+  .phone iframe{position:absolute; left:0; top:0; width:390px; height:844px; border:0; transform-origin:0 0; transform:scale(var(--k)); clip-path:inset(0 round calc(36px / var(--k)))}
+
+  /* the widgets, as they sit on the canvas: one wide board */
+  .wide{margin-top:56px; overflow-x:auto; border-radius:20px; scrollbar-width:none}
+  .wide::-webkit-scrollbar{display:none}
+  .wide .fit{position:relative; overflow:hidden; border-radius:20px}
+  .wide iframe{position:absolute; left:0; top:0; width:1292px; height:640px; border:0; transform-origin:0 0}
+
+  /* ---------- how it was made ---------- */
+  .steps .num{display:block; margin-bottom:20px}
+  .sub{margin-top:72px}
+  .sub > h3{margin-bottom:24px}
+  .log{border-top:1px solid var(--ink)}
+  .log div{display:grid; grid-template-columns:120px minmax(0,1fr); gap:24px; padding:16px 0; border-bottom:1px solid var(--line); font-size:16px; line-height:1.55}
+  .log dt{font-weight:600}
+  .log dd{color:var(--ink2)}
+  .cut h3{text-decoration:line-through; text-decoration-thickness:1.5px; text-decoration-color:var(--ink2)}
+
+  /* ---------- where it stands ---------- */
+  .measure{list-style:none; padding:0; border-top:1px solid var(--ink)}
+  .measure li{display:grid; grid-template-columns:56px minmax(0,1fr); align-items:baseline; padding:18px 0; border-bottom:1px solid var(--line); font-size:16px; line-height:1.6; color:var(--ink2)}
+  .measure li .num{font-size:28px}
+  .todo{border-style:dashed; color:var(--ink2); font-size:16px}
+
+  /* ---------- next ---------- */
+  .nextp{margin-top:144px; padding-top:72px; border-top:1px solid var(--line); text-align:center}
+  .nextp a{color:inherit; text-decoration:none; display:inline-flex; flex-direction:column; align-items:center; gap:24px}
+  .nextp img{width:200px; transform:rotate(3deg); transition:transform .4s var(--ease); filter:drop-shadow(0 2px 2px rgba(60,40,0,.25)) drop-shadow(0 12px 16px rgba(60,40,0,.18))}
+  .nextp a:hover img{transform:rotate(-2deg) scale(1.04)}
+  .nextp .t{font-weight:700; font-size:32px; letter-spacing:-.03em}
+
+  /* reveal on scroll */
+  .rv{opacity:0; transform:translateY(24px); transition:opacity .8s var(--ease), transform .8s var(--ease)}
+  .rv.in{opacity:1; transform:none}
+
+  @media (max-width: 1000px){
+    .letter{padding:64px 48px 96px}
+    .facts{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .duo, .duo.flip{grid-template-columns:300px minmax(0,1fr); gap:48px}
+    .duo.flip .shot{order:0}
+  }
+  @media (max-width: 760px){
+    .letter{width:calc(100vw - 24px); padding:56px 24px 72px; margin-top:76px}
+    .lt-head{grid-template-columns:1fr; gap:0}
+    .lt-slot{grid-row:1; justify-self:end; width:150px; margin:-32px -8px 0 0}
+    .lt-head h1{margin-top:16px}
+    .lt-head .lede{font-size:18px}
+    .facts{grid-template-columns:1fr 1fr; gap:0 24px}
+    .facts div{padding:16px 0}
+    .photo{border-radius:14px}
+    section{padding-top:96px}
+    .why, .duo, .duo.flip, .grid2, .grid3{grid-template-columns:minmax(0,1fr); gap:24px}
+    .why{gap:40px}
+    .duo{gap:32px; margin-top:72px}
+    .shot{justify-self:center}
+    .compare th:last-child, .compare td:last-child{display:none}
+    .compare td:first-child{width:auto}
+          .log div{grid-template-columns:72px minmax(0,1fr); gap:16px}
+    .phone{--k:.64615; width:272px; height:565px}
+  }
+</style>
+</head>
+<body>
+
+<button class="back" type="button" id="back">&larr; Back</button>
+
+<article class="letter">
+  <header class="col">
+    <div class="lt-head">
+      <div>
+        <h1>Goalkeeper</h1>
+        <p class="lede">A voice-first assistant for Android that keeps your whole day in one place. I designed it and built it myself with Claude, and it's in testing now.</p>
+        <a class="live" href="https://www.heygoalkeeper.in/" target="_blank" rel="noopener">Visit the live site &nearr;</a>
+      </div>
+      <div class="lt-slot"><canvas class="lt-stamp" id="stamp" aria-label="Goalkeeper stamp" role="img"></canvas><canvas class="lt-pm" id="pm" aria-hidden="true"></canvas></div>
+    </div>
+    <dl class="facts">
+      <div><dt>Role</dt><dd>Design and build</dd></div>
+      <div><dt>Team</dt><dd>Solo, with Claude</dd></div>
+      <div><dt>Platform</dt><dd>Android App + Widget</dd></div>
+      <div><dt>Timeline</dt><dd>Since 27 Sep 2026</dd></div>
+      <div><dt>Status</dt><dd>In testing</dd></div>
+    </dl>
+    <div class="photo"><video id="launch" src="assets/goalkeeper/launch.mp4" poster="assets/goalkeeper/launch.jpg" muted loop playsinline controls preload="metadata" aria-label="Goalkeeper launch video"></video></div>
+  </header>
+
+  <!-- WHY -->
+  <section class="col why rv">
+    <div>
+      <h2>Nobody assigns me my day</h2>
+      <p class="body" style="margin-top:16px">I'm a full-time freelancer. There's no manager handing me work and nobody checking in at the end of the day. My day is spread across calendars, chats, mail and a dozen apps, and keeping track of it was a job of its own.</p>
+      <p class="body">I wanted something that watches my whole day across those apps, tells me what to do next and what matters most, and at night asks what happened. What didn't get done moves to tomorrow. If I'm past a deadline and haven't said anything, it nudges me.</p>
+      <p class="body">Everything in Goalkeeper is built on top of that.</p>
+    </div>
+    <div class="scatter" id="scatter">
+      <img src="assets/calendar.webp" class="src" style="left:10%;top:12%;transform:rotate(-8deg)" alt="">
+      <img src="assets/gmail.jpg" style="left:62%;top:8%;transform:rotate(6deg)" alt="">
+      <img src="assets/whatsapp.png" class="src" style="left:36%;top:30%;transform:rotate(-4deg)" alt="">
+      <img src="assets/slack.jpg" style="left:74%;top:44%;transform:rotate(10deg)" alt="">
+      <img src="assets/notion.jpg" class="src" style="left:8%;top:52%;transform:rotate(5deg)" alt="">
+      <img src="assets/uber.jpg" style="left:44%;top:68%;transform:rotate(-10deg)" alt="">
+      <img src="assets/swiggy.jpg" style="left:72%;top:76%;transform:rotate(4deg)" alt="">
+      <div class="ping" style="top:16%;--fx:-14%;--fy:-10%;--gy:180%"><img src="assets/whatsapp.png" alt=""><span><em>Riya</em>Can you send the deck before we talk?</span></div>
+      <div class="ping" style="top:39%;--fx:-30%;--fy:-120%;--gy:80%"><img src="assets/calendar.webp" alt=""><span><em>4:00 PM</em>Call with Riya</span></div>
+      <div class="ping" style="top:60%;--fx:-30%;--fy:20%;--gy:-20%"><img src="assets/notion.jpg" alt=""><span><em>Pitch deck</em>Final, ready to share</span></div>
+      <div class="next" aria-label="Send Riya the deck, before your 4 PM call. Open WhatsApp, or Later.">
+        <p aria-hidden="true"><span class="w" style="--i:0">Send</span> <span class="w" style="--i:1">Riya</span> <span class="w" style="--i:2">the</span> <span class="w" style="--i:3">deck</span> <span class="w" style="--i:4"><img src="assets/whatsapp.png" alt=""></span></p>
+        <p aria-hidden="true"><span class="w" style="--i:5">before</span> <span class="w" style="--i:6">your</span> <span class="w" style="--i:7">4 PM</span> <span class="w" style="--i:8">call</span> <span class="w" style="--i:9"><img src="assets/calendar.webp" alt=""></span></p>
+        <div class="acts" aria-hidden="true"><span>Open WhatsApp</span><span>Later</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE BET -->
+  <section class="col rv">
+    <div class="head">
+      <h2>Why not just use Gemini or Siri?</h2>
+      <p class="body">They already understand speech, set reminders and send texts, and I wasn't going to beat them at that. But they serve a billion people, so they stay neutral: they wait to be asked, finish the request and forget it. Goalkeeper does the opposite, on purpose.</p>
+    </div>
+    <table class="compare after">
+      <thead><tr><th>Goalkeeper does</th><th>Why the big assistants don't</th></tr></thead>
+      <tbody>
+        <tr><td>A morning plan and an evening close, every day</td><td>An assistant for everyone can't impose a routine</td></tr>
+        <tr><td>Tracks who you're waiting on: "Did Akash pay? Nudge him?"</td><td>They finish a request and forget it</td></tr>
+        <tr><td>Pushes back: "You've moved the gym four times. Keep it, shorten it, or drop it?"</td><td>A mass-market assistant won't judge you</td></tr>
+        <tr><td>Always shows what's next, on your home screen</td><td>They don't keep a place on your screen for your day</td></tr>
+      </tbody>
+    </table>
+    <div class="quote">
+      <h3>Grok came closest</h3>
+      <p class="body">It can already summarise your calendar and mail every night. But nothing in it fires on silence: no reply in three days, the gym skipped again, a task moved a fourth time. Those became what creates Goalkeeper's nudges.</p>
+    </div>
+  </section>
+
+  <!-- PROMISES -->
+  <section class="col rv">
+    <div class="head">
+      <h2>Four promises</h2>
+      <p class="body">These are on the website, and the app is built to keep them.</p>
+    </div>
+    <div class="grid2 after">
+      <div class="card promise"><span class="num">1</span><h3>The last tap is yours</h3><p>It drafts, finds and compares, then opens the right app. It never sends, books or pays by itself, so buttons say "Open Uber", never "Booked".</p></div>
+      <div class="card promise"><span class="num">2</span><h3>Your day stays on your phone</h3><p>No account and nothing to sign up for.</p></div>
+      <div class="card promise"><span class="num">3</span><h3>It never reads your chats</h3><p>What you say in WhatsApp stays in WhatsApp.</p></div>
+      <div class="card promise"><span class="num">4</span><h3>One thing at a time</h3><p>One call to action per moment, so you never have to decide where to tap.</p></div>
+    </div>
+  </section>
+
+  <!-- THE WIDGET -->
+  <section class="col rv">
+    <div class="head">
+      <h2>The widget</h2>
+      <p class="body">The widget sits on your home screen and changes through the day, so the next thing is always one glance away. The 4×2 moves through the evening: the gym, the Instamart order on its way, the text to Monika, the Modalis call, then closing the day. The 4×4 lays out the whole evening, each thing with its own button, and each 2×2 holds just one.</p>
+    </div>
+    <div class="wide"><div class="fit" id="wideFit"><iframe data-board="GWidgets" title="Goalkeeper's widgets in three sizes" loading="lazy"></iframe></div></div>
+  </section>
+
+  <!-- DECISIONS -->
+  <section class="col">
+    <div class="head rv">
+      <h2>Inside the app</h2>
+      <p class="body">Five decisions that shaped how it feels to use.</p>
+    </div>
+
+    <div class="duo rv">
+      <div class="shot">
+        <div class="phone"><iframe data-board="HomeLast" title="Goalkeeper Home" loading="lazy"></iframe></div>
+      </div>
+      <div>
+        <h3>Home shows only what's next</h3>
+        <p class="body">Home took ten rounds. The early ones showed the whole day, the way a calendar does. But every time I opened it, I only wanted to know one thing: what do I do now?</p>
+        <p class="body">So Home shows just the next task, written as a sentence, at the bottom where your thumb is. The rest of the day is one swipe away.</p>
+      </div>
+    </div>
+
+    <div class="duo flip rv">
+      <div class="shot">
+        <div class="phone"><iframe data-board="OverlayListenA" title="Goalkeeper listening" loading="lazy"></iframe></div>
+      </div>
+      <div>
+        <h3>Listening fills up, then sums up</h3>
+        <p class="body">Talking to an app feels awkward when you can't tell if it heard you. While you speak, the words fill the screen as they're heard.</p>
+        <p class="body">When you stop, it highlights each thing it understood, then reads them back as one sentence, written the way Home writes your day, so you can see at a glance whether it got it right.</p>
+      </div>
+    </div>
+
+    <div class="duo rv">
+      <div class="shot">
+        <div class="phone"><iframe data-board="OverlayC2Dark" title="Goalkeeper opening over a chat" loading="lazy"></iframe></div>
+      </div>
+      <div>
+        <h3>It opens over the app you're in</h3>
+        <p class="body">You shouldn't have to leave WhatsApp to add something to your day. Say "Hey Goalkeeper" or hold the power button, and it opens on glass over whatever you're doing.</p>
+        <p class="body">I tried three directions, Glow, Sheet and Morph, and went with Morph. Nothing inside sits in cards or boxes. Spacing does the work.</p>
+      </div>
+    </div>
+
+    <div class="duo flip rv">
+      <div class="shot">
+        <div class="phone"><iframe data-board="OverlayC2" title="Goalkeeper comparing prices" loading="lazy"></iframe></div>
+      </div>
+      <div>
+        <h3>Price check compares, but never books</h3>
+        <p class="body">"Get me a cab to the office" shouldn't mean opening four apps. Goalkeeper reads the fares on Uber, Ola, Rapido and Bharat Taxi, and dish prices on Swiggy and Zomato, and puts them side by side.</p>
+        <p class="body">It only reads. It can't press Book or Pay, because of promise number one.</p>
+      </div>
+    </div>
+
+    <div class="duo rv">
+      <div class="shot">
+        <div class="phone"><iframe data-board="GClose" title="Goalkeeper closing the day" loading="lazy"></iframe></div>
+      </div>
+      <div>
+        <h3>The evening close</h3>
+        <p class="body">This is the part I needed most. At night, Goalkeeper asks how the day went, in about a minute, by voice or by tapping.</p>
+        <p class="body">What's left moves to tomorrow or gets let go. Anything moved three times gets pushback. It reminds you who you're still waiting on, checks whether tomorrow fits, then starts it with the one thing that matters most.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WAS MADE -->
+  <section class="col rv">
+    <div class="head">
+      <h2>How it was made</h2>
+      <p class="body">AI is why one designer could do all of this. Building used to be a separate team's job; now I ship what I design and test it the same day.</p>
+    </div>
+    <div class="grid3 after steps">
+      <div class="card"><span class="num">1</span><h3>Design on a canvas</h3><p>Every screen drawn first, in rounds, with real options side by side. A direction gets built only once it's picked.</p></div>
+      <div class="card"><span class="num">2</span><h3>Build with Claude</h3><p>The picked design goes straight into Kotlin and Jetpack Compose, the app's real code.</p></div>
+      <div class="card"><span class="num">3</span><h3>Live with it</h3><p>Each build is installed on my phone and used through the day. What breaks becomes the next round.</p></div>
+    </div>
+    <div class="sub">
+      <h3>The first ten days</h3>
+      <dl class="log">
+        <div><dt>27 Sep</dt><dd>The idea, the plan, and the first motion studies</dd></div>
+        <div><dt>28 Sep</dt><dd>Why not Gemini or Siri. The Talk screen and AI understanding</dd></div>
+        <div><dt>29 Sep</dt><dd>The evening close, and the first fixes from my phone</dd></div>
+        <div><dt>30 Sep</dt><dd>A new look everywhere, goals and money</dd></div>
+        <div><dt>6 Oct</dt><dd>First installable build, and "Hey Goalkeeper"</dd></div>
+        <div><dt>7 Oct</dt><dd>Price check, the overlay, the new Home and listening</dd></div>
+      </dl>
+    </div>
+    <div class="sub">
+      <h3>What I let go</h3>
+      <div class="grid2 cut">
+        <div class="card"><h3>Moving water</h3><p>The first version had real water behind everything, rippling when you spoke. [Your reason for dropping it]</p></div>
+        <div class="card"><h3>A serif typeface</h3><p>I tried one for headings, then went fully sans-serif with Geist, on a strict scale of 40, 32, 24, 20, 16 and 12.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTING -->
+  <section class="col rv">
+    <div class="head">
+      <h2>What testing has taught me so far</h2>
+      <p class="body">Right now I'm the only tester. I use Goalkeeper through my whole day and fix things as they break.</p>
+    </div>
+    <div class="grid3 after">
+      <div class="card"><h3>"Office" went to any office</h3><p>A cab to the office sent Uber to whichever office was nearest. Now every destination is confirmed with one tap, and you save your own places once.</p></div>
+      <div class="card"><h3>It acted on noise</h3><p>Background sound sometimes became a task. Now it never acts on what it isn't sure it heard, and says plainly what it can't do.</p></div>
+      <div class="card"><h3>The wake word</h3><p>On recorded test voices it caught 20 of 24, with no false alarms in 60 tries. It still needs tuning on real voices.</p></div>
+    </div>
+  </section>
+
+  <!-- WHERE IT STANDS -->
+  <section class="col rv">
+    <div class="head">
+      <h2>Where it stands</h2>
+      <p class="body">The website is live with early access open, and 35+ people have joined the waitlist from it and from posts on X, LinkedIn and Instagram. The app has been through 7 test builds in two days, each one installed on my phone.</p>
+    </div>
+    <div class="sub">
+      <h3>What I'll measure when it opens up</h3>
+      <ol class="measure">
+        <li><span class="num">1</span>How many people still do the morning plan and evening close after a week. If the habit doesn't stick, nothing else matters.</li>
+        <li><span class="num">2</span>How often an "Open Uber" or "Open WhatsApp" handoff ends with the thing actually done.</li>
+        <li><span class="num">3</span>How many nudges lead to an action, and how many get ignored.</li>
+        <li><span class="num">4</span>How many people on the waitlist install it and come back the next day.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="col rv">
+    <div class="head"><h2>What I learned</h2></div>
+    <div class="card todo after">[In your own words]</div>
+  </section>
+
+  <div class="nextp">
+    <a href="prd-loop.html" data-go="prd-loop">
+      <img src="../stamps/prd-loop.webp" alt="PRD Loop stamp">
+      <span class="t">PRD Loop &rarr;</span>
+    </a>
+  </div>
+  <script src="more.js"></script>
+</article>
+
+<script src="../print.js"></script>
+<script>function gatherDay(){const e=document.getElementById("scatter"),t=e.querySelectorAll(".ping");if(matchMedia("(prefers-reduced-motion: reduce)").matches){e.querySelectorAll(":scope > img").forEach((n,o)=>{n.style.left=8+o*11+"%",n.style.top="5%"}),e.classList.add("s1","s2","s3","s4");return}const s=(n,o)=>setTimeout(o,n);s(300,()=>e.classList.add("s1")),s(1500,()=>e.classList.add("s2")),t.forEach((n,o)=>s(1500+o*650,()=>n.classList.add("on"))),s(4600,()=>{e.querySelectorAll(":scope > img").forEach((n,o)=>{n.style.left=8+o*11+"%",n.style.top="5%"}),e.classList.add("s3")}),s(5600,()=>e.classList.add("s4"))}const io=new IntersectionObserver(e=>e.forEach(t=>{t.isIntersecting&&(t.target.classList.add("in"),t.target.querySelector("#scatter")&&gatherDay(),io.unobserve(t.target))}),{threshold:.2});document.querySelectorAll(".rv").forEach(e=>io.observe(e));const launch=document.getElementById("launch");new IntersectionObserver(([e])=>{e.isIntersecting?launch.play().catch(()=>{}):launch.pause()},{threshold:.4}).observe(launch);const boards=document.querySelectorAll("iframe[data-board]"),bio=new IntersectionObserver(e=>e.forEach(t=>{const s=t.target,n=s.closest(".phone"),o=n?"&r="+(36/parseFloat(getComputedStyle(n).getPropertyValue("--k"))).toFixed(1):"";t.isIntersecting&&!s.src&&(s.src="gk/board.html?b="+s.dataset.board+o),s.contentWindow&&s.contentWindow.postMessage({run:t.isIntersecting},"*")}),{rootMargin:"300px 0px"});boards.forEach(e=>{bio.observe(e),e.addEventListener("load",()=>e.contentWindow.postMessage({run:!0},"*"))});const wideFit=document.getElementById("wideFit");function fitWide(){const e=Math.max(wideFit.parentNode.clientWidth,646)/1292;wideFit.style.width=1292*e+"px",wideFit.style.height=640*e+"px",wideFit.firstElementChild.style.transform=`scale(${e})`}fitWide(),addEventListener("resize",fitWide);const embed=document.documentElement.classList.contains("embed"),host=embed&&parent!==window?parent:null,stampEl=document.getElementById("stamp"),pmEl=document.getElementById("pm"),today=new Date,DATE=[`${today.toLocaleString("en",{month:"short"}).toUpperCase()} ${today.getDate()}`,String(today.getFullYear())];try{const e=document.createElement("canvas");e.width=e.height=360,Print.paper(e.getContext("2d"),360,360,"#fbf7ec",41,10),document.querySelector(".letter").style.setProperty("--grain",`url(${e.toDataURL()})`)}catch{}function drawStamp(e){stampEl.width=e.width,stampEl.height=e.height,stampEl.getContext("2d").drawImage(e,0,0)}const art=host&&host.Picnic&&host.Picnic.art("goalkeeper").front;if(art)drawStamp(art);else{const e=new Image;e.onload=()=>document.fonts.ready.then(()=>drawStamp(Print.coverStamp(!1,Print.openMark(!1,DATE),e).inked)),e.src="../stamps/goalkeeper.webp"}document.fonts.ready.then(()=>{const e=Print.postmark({R:60,top:"SELECTED WORK",bottom:"AARYA SHAH",l1:DATE[0],l2:DATE[1],color:"#2a3a7a",waves:-1,waveLen:150,seed:11,k:3});pmEl.width=e.canvas.width,pmEl.height=e.canvas.height,pmEl.getContext("2d").drawImage(e.canvas,0,0),embed||setTimeout(()=>pmEl.classList.add("on"),500)}),window.Letter={slot(){const e=stampEl.getBoundingClientRect();return{x:e.left+e.width/2,y:e.top+e.height/2,w:stampEl.offsetWidth,h:stampEl.offsetHeight,r:3*Math.PI/180}},hideStamp(){stampEl.style.opacity=0,pmEl.classList.remove("on")},land(){stampEl.style.opacity=1,pmEl.classList.add("on")},toTop(){return new Promise(e=>{if(scrollY<2)return e();scrollTo({top:0,behavior:"smooth"});const t=performance.now(),s=()=>scrollY<2||performance.now()-t>900?e():setTimeout(s,30);setTimeout(s,30)})}};const minimal=document.documentElement.classList.contains("minimal"),leave=()=>host&&host.Case?host.Case.close():location.href=minimal?"../minimal/":"../";document.getElementById("back").addEventListener("click",leave),document.querySelectorAll("[data-go]").forEach(e=>e.addEventListener("click",t=>{host&&host.Case?(t.preventDefault(),host.Case.go(e.dataset.go)):minimal&&(t.preventDefault(),location.href=e.dataset.go+".html?minimal")})),addEventListener("keydown",e=>{e.key==="Escape"&&leave()});</script>
+</body>
+</html>

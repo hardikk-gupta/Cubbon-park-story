@@ -1,0 +1,21 @@
+HTTP/1.1 200 OK
+date: Tue, 20 Oct 2026 19:15:02 GMT
+server: envoy
+
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 6044
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+content-type: text/html; charset=utf-8
+date: Tue, 20 Oct 2026 19:15:02 GMT
+etag: "fc2ffe7f6d0d103a1572243c567e8c4c"
+last-modified: Tue, 20 Oct 2026 17:34:18 GMT
+server: envoy
+strict-transport-security: max-age=63072000
+x-vercel-cache: HIT
+x-vercel-id: cle1::6gtqf-1792523702885-f71dfd4c48bb
+content-length: 23445
+x-envoy-upstream-service-time: 269
+

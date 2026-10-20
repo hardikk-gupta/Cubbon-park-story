@@ -1,0 +1,83 @@
+{
+  "source": "https://aarya.wtf/",
+  "captured_at_utc": "2026-10-20",
+  "rendering": {
+    "main": "WebGL2",
+    "artwork": "Canvas2D",
+    "dom_motion": [
+      "CSS transitions/keyframes",
+      "Web Animations API"
+    ],
+    "camera_distance": 1800,
+    "light_vector_before_normalization": [
+      -0.36,
+      -0.46,
+      0.81
+    ],
+    "ambient_rgb": [
+      0.56,
+      0.56,
+      0.62
+    ],
+    "sun_rgb": [
+      1,
+      0.99,
+      0.965
+    ],
+    "max_dpr": 2,
+    "canopy_resolution_factor": 0.42,
+    "occlusion_resolution_factor": 0.5
+  },
+  "motion": {
+    "max_dt_seconds": 0.05,
+    "scroll_damping_rate": 7,
+    "paper_hover_damping_rate": 8,
+    "prop_hover_damping_rate": 10,
+    "gust_damping_rate": 1.5,
+    "postcard_spring": {
+      "stiffness": 130,
+      "damping": 13
+    },
+    "hero_hover_lift": 14,
+    "entrance_seconds": 2.8,
+    "entrance_zoom": [
+      0.34,
+      1
+    ],
+    "entrance_spin_rad": [
+      -0.16,
+      0
+    ]
+  },
+  "shadows": {
+    "projection": "world.xy - light.xy/light.z * world.z",
+    "height_encode_scale": 600,
+    "tight_blur_control": 4,
+    "wide_blur_control": 26,
+    "blur_samples_per_axis": 13,
+    "height_softness_range": 150,
+    "receiver_height_fade": [
+      3,
+      28
+    ]
+  },
+  "css": {
+    "paper": "#fbf7ec",
+    "cream": "#f6f0e0",
+    "ink": "#141210",
+    "line": "#e4d9c2",
+    "blue": "#1d3fa6",
+    "navigation_hover": {
+      "translateY": -8,
+      "scale": 1.08,
+      "easing": "cubic-bezier(.2,1.6,.4,1)"
+    },
+    "pill_shadow": "0 1px 2px rgba(70,20,25,.2), 0 8px 20px rgba(70,20,25,.16)"
+  },
+  "scope": {
+    "deployed_frontend_recovered": true,
+    "original_repository_found": false,
+    "backend_source_recovered": false,
+    "local_external_submissions": "blocked by preview server CSP"
+  }
+}

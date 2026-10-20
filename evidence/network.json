@@ -1,0 +1,317 @@
+[
+  {
+    "url": "https://aarya.wtf/",
+    "status": 200,
+    "type": "document"
+  },
+  {
+    "url": "https://aarya.wtf/print.js",
+    "status": 200,
+    "type": "script"
+  },
+  {
+    "url": "https://aarya.wtf/scene.js",
+    "status": 200,
+    "type": "script"
+  },
+  {
+    "url": "https://aarya.wtf/butterflies.js",
+    "status": 200,
+    "type": "script"
+  },
+  {
+    "url": "https://aarya.wtf/colour.js",
+    "status": 200,
+    "type": "script"
+  },
+  {
+    "url": "https://aarya.wtf/paint.js",
+    "status": 200,
+    "type": "script"
+  },
+  {
+    "url": "https://aarya.wtf/props.js",
+    "status": 200,
+    "type": "script"
+  },
+  {
+    "url": "https://aarya.wtf/nature.js",
+    "status": 200,
+    "type": "script"
+  },
+  {
+    "url": "https://aarya.wtf/case.js",
+    "status": 200,
+    "type": "script"
+  },
+  {
+    "url": "https://aarya.wtf/sound.js",
+    "status": 200,
+    "type": "script"
+  },
+  {
+    "url": "https://aarya.wtf/picnic.js",
+    "status": 200,
+    "type": "script"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@500&family=Yellowtail&display=swap",
+    "status": 200,
+    "type": "stylesheet"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@700&family=Kalam:wght@400&family=Abril+Fatface&family=Archivo+Black&family=Bebas+Neue&family=Bowlby+One&family=Bungee&family=Cherry+Bomb+One&family=DM+Serif+Display:ital@1&family=Fraunces:ital,opsz,wght@1,9..144,900&family=Instrument+Serif:ital@1&family=Rubik+Mono+One&family=Shrikhand&display=swap",
+    "status": 200,
+    "type": "stylesheet"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/mini/goalkeeper.webp",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/mini/prd-loop.webp",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/goalkeeper.webp",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/dayro.webp",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/ride-through-the-valley.webp",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/prd-loop.webp",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/lamad.webp",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/transporter.webp",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/quickmart.webp",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/phonepe.webp",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/clients/daixta.png",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/hero-intro-poster.jpg",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/clients/cwsr.png",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/clients/lamad.png",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/clients/logicbric.png",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/clients/byd.png",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/clients/rcmo.png",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/clients/logo.svg",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/clients/stairs.png",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/clients/tidymy.png",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/clients/title.svg",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/hero.mp4",
+    "status": 206,
+    "type": "media"
+  },
+  {
+    "url": "https://aarya.wtf/clients/zanride.png",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/clients/rysysth.png",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/hero-intro.mp4",
+    "status": 206,
+    "type": "media"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/geistmono/v6/or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeEPKK5U5Ck.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/yellowtail/v25/OZpGg_pnoDtINPfRIlLohlvHwQ.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/kalam/v18/YA9dr0Wd4kDdMthROCc.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/cherrybombone/v11/y83DW4od1h6KlV3c6JJhRhGOdhr6C9BE.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/shrikhand/v17/a8IbNovtLWfR7T7bMJwrA4KR.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sourceserif4/v15/vEFy2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUHf6OAVIJmeUDygwjivBtnhtdDg.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/abrilfatface/v25/zOL64pLDlL1D99S8g8PtiKchq-dmjQ.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/rubikmonoone/v20/UqyJK8kPP3hjw6ANTdfRk9YSN983TKU.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/bowlbyone/v25/taiPGmVuC4y96PFeqp8sqomI_A.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/bungee/v17/N0bU2SZBIuF2PU_0DXR1.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/fraunces/v38/6NUs8FyLNQOQZAnv9ZwNjucMHVn85Ni7emAe9lKqZTnbB-gzTK0K1ChJdt9hFwpX9W37lvZ4mv0iQg.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/archivoblack/v23/HTxqL289NzCGg4MzN6KJ7eW6CYyF_g.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/cherrybombone/v11/y83DW4od1h6KlV3c6JJhRhGOdhrKCbJV4UaZm3sXy9jN_RPRW5J5Vu-09rA.118.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2",
+    "status": 200,
+    "type": "font"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/mini/phonepe.webp",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/photos/1.jpg",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/photos/4.jpg",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/photos/3.jpg",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/photos/5.jpg",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/photos/2.jpg",
+    "status": 200,
+    "type": "image"
+  },
+  {
+    "url": "https://aarya.wtf/favicon.svg",
+    "status": 200,
+    "type": "other"
+  },
+  {
+    "url": "https://aarya.wtf/hero.mp4",
+    "status": 206,
+    "type": "media"
+  }
+]

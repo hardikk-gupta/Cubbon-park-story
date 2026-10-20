@@ -1,0 +1,114 @@
+{
+  "title": "Aarya Shah — Product Designer",
+  "height": 17731,
+  "bodyClass": "on",
+  "webgl": true,
+  "links": [
+    {
+      "text": "Minimal portfolio →",
+      "url": "https://aarya.wtf/minimal/"
+    },
+    {
+      "text": "aaryashah.design@gmail.com",
+      "url": "mailto:aaryashah.design@gmail.com"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/in/aaryahshah/"
+    },
+    {
+      "text": "Instagram",
+      "url": "https://www.instagram.com/aaryashahh"
+    },
+    {
+      "text": "X",
+      "url": "https://x.com/aaryashahh"
+    },
+    {
+      "text": "Résumé",
+      "url": "https://aarya.wtf/Aarya_Shah_Resume.pdf"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "",
+      "label": "Sound off"
+    },
+    {
+      "text": "Send",
+      "label": null
+    },
+    {
+      "text": "",
+      "label": "Red"
+    },
+    {
+      "text": "",
+      "label": "Pink"
+    },
+    {
+      "text": "",
+      "label": "Yellow"
+    },
+    {
+      "text": "",
+      "label": "Green"
+    },
+    {
+      "text": "",
+      "label": "Blue"
+    },
+    {
+      "text": "",
+      "label": "Brown"
+    },
+    {
+      "text": "",
+      "label": "Fine brush"
+    },
+    {
+      "text": "",
+      "label": "Medium brush"
+    },
+    {
+      "text": "",
+      "label": "Broad brush"
+    },
+    {
+      "text": "Eraser",
+      "label": null
+    },
+    {
+      "text": "Start over",
+      "label": null
+    },
+    {
+      "text": "Save",
+      "label": null
+    },
+    {
+      "text": "",
+      "label": "Menu"
+    },
+    {
+      "text": "",
+      "label": "Hello"
+    },
+    {
+      "text": "",
+      "label": "Work"
+    },
+    {
+      "text": "",
+      "label": "Kind words"
+    },
+    {
+      "text": "",
+      "label": "Say hi"
+    },
+    {
+      "text": "",
+      "label": "Colour in"
+    }
+  ]
+}

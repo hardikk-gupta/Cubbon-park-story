@@ -1,0 +1,23 @@
+{
+  "captured_from": "https://aarya.wtf/",
+  "date_utc": "2026-10-20",
+  "successful_downloads": 201,
+  "downloaded_bytes": 66002778,
+  "original_file_count": 194,
+  "extensions": {
+    ".png": 94,
+    ".txt": 1,
+    ".js": 14,
+    ".jpg": 35,
+    ".mp4": 11,
+    ".html": 12,
+    ".svg": 3,
+    ".pdf": 1,
+    ".webp": 20,
+    ".mp3": 3
+  },
+  "original_hash_mismatches": [],
+  "extracted_shader_count": 14,
+  "source_repository_found": false,
+  "backend_source_recovered": false
+}

@@ -1,0 +1,1469 @@
+[
+  {
+    "url": "https://aarya.wtf/",
+    "path": "original/index.html",
+    "status": 200,
+    "bytes": 23445,
+    "sha256": "eee64f953e439653eb166cf8f401d2be68caa94bca92fd65afa52cfafbdaca5d"
+  },
+  {
+    "url": "https://aarya.wtf/Aarya_Shah_Resume.pdf",
+    "path": "original/Aarya_Shah_Resume.pdf",
+    "status": 200,
+    "bytes": 550076,
+    "sha256": "147481d30d2c0b21fae1d5dc5f5a150548a72d23fdc1771e54c015e43b33122c"
+  },
+  {
+    "url": "https://aarya.wtf/aarya-wtf.png",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/apple-touch-icon.png",
+    "path": "original/apple-touch-icon.png",
+    "status": 200,
+    "bytes": 8961,
+    "sha256": "bd68be7e402f671b1c65725d5df0365febcb23c1ac742ad740e433bd3fbe8ed1"
+  },
+  {
+    "url": "https://aarya.wtf/butterflies.js",
+    "path": "original/butterflies.js",
+    "status": 200,
+    "bytes": 5432,
+    "sha256": "7addb1cd8291844c569510ad9fbd9f9fd39b99fb2ff41536232243b074997e79"
+  },
+  {
+    "url": "https://aarya.wtf/case.js",
+    "path": "original/case.js",
+    "status": 200,
+    "bytes": 4839,
+    "sha256": "11243ab6fefb9ac3192bdf0568335e4c1e8784800dae72d6d4b679d898738f8d"
+  },
+  {
+    "url": "https://aarya.wtf/clients/byd.png",
+    "path": "original/clients/byd.png",
+    "status": 200,
+    "bytes": 39388,
+    "sha256": "d70cebe2e872cf18d3771f13da162822196274cf349c472051df5946b19ad09f"
+  },
+  {
+    "url": "https://aarya.wtf/clients/cwsr.png",
+    "path": "original/clients/cwsr.png",
+    "status": 200,
+    "bytes": 34019,
+    "sha256": "e360e0b4956d980e2c610ce83ab8af44a59145ea5ebfb493084548d70458b71c"
+  },
+  {
+    "url": "https://aarya.wtf/clients/daixta.png",
+    "path": "original/clients/daixta.png",
+    "status": 200,
+    "bytes": 35857,
+    "sha256": "aa6fd0eabcbe3d19e5e39874133b67506a2a9c8fc6a6696d906c6c1dc95e2281"
+  },
+  {
+    "url": "https://aarya.wtf/clients/lamad.png",
+    "path": "original/clients/lamad.png",
+    "status": 200,
+    "bytes": 18390,
+    "sha256": "34555e321a50480972ab639446f6fa494eb6f44fa3693279e7e784d82e63a634"
+  },
+  {
+    "url": "https://aarya.wtf/clients/logicbric.png",
+    "path": "original/clients/logicbric.png",
+    "status": 200,
+    "bytes": 19151,
+    "sha256": "abbfb22d63cfc27addfdcf94c98c7228c45591177415210cfd28e84bfeededa5"
+  },
+  {
+    "url": "https://aarya.wtf/clients/logo.svg",
+    "path": "original/clients/logo.svg",
+    "status": 200,
+    "bytes": 32334,
+    "sha256": "7fd520132820b5acc1a446edcb777b27994eb9a4b0917e23d82f82452c478e7c"
+  },
+  {
+    "url": "https://aarya.wtf/clients/rcmo.png",
+    "path": "original/clients/rcmo.png",
+    "status": 200,
+    "bytes": 30998,
+    "sha256": "eda7b9c00ba2c835c18602ac6cbbb9601e035e6d67288fda671884359d3ec58a"
+  },
+  {
+    "url": "https://aarya.wtf/clients/rysysth.png",
+    "path": "original/clients/rysysth.png",
+    "status": 200,
+    "bytes": 37499,
+    "sha256": "8c2a046e376b2103d05bc394e6e2a46df74ee8f1bba479e1797d86d6570a5b3a"
+  },
+  {
+    "url": "https://aarya.wtf/clients/stairs.png",
+    "path": "original/clients/stairs.png",
+    "status": 200,
+    "bytes": 23464,
+    "sha256": "0d514ef486d70158979992b3d7350fbeb355f2ec456eba6b6571625f9432d495"
+  },
+  {
+    "url": "https://aarya.wtf/clients/tidymy.png",
+    "path": "original/clients/tidymy.png",
+    "status": 200,
+    "bytes": 34939,
+    "sha256": "a6826e24f0996c75b416a57d02894918be183758edf09f3c59bb9d11f8b629c1"
+  },
+  {
+    "url": "https://aarya.wtf/clients/title.svg",
+    "path": "original/clients/title.svg",
+    "status": 200,
+    "bytes": 47923,
+    "sha256": "96b90e0b336e8413f1b99846e948cc5f569b8f44c1de67316f6fdb43316c4ce9"
+  },
+  {
+    "url": "https://aarya.wtf/clients/zanride.png",
+    "path": "original/clients/zanride.png",
+    "status": 200,
+    "bytes": 32994,
+    "sha256": "09b4023a549654ad99f1daf13814f357a73df87a79725dbaf0885f1a3f69c402"
+  },
+  {
+    "url": "https://aarya.wtf/colour.js",
+    "path": "original/colour.js",
+    "status": 200,
+    "bytes": 10214,
+    "sha256": "3c46a04e32c59491b36af1d4cc5bf36ab7be46c398651e3fed70db75b9ed4c03"
+  },
+  {
+    "url": "https://aarya.wtf/favicon.svg",
+    "path": "original/favicon.svg",
+    "status": 200,
+    "bytes": 1785,
+    "sha256": "b0d11b0e1abbc3098c020f74ffccd824ab0e8b5a6d891466e0b231d422907787"
+  },
+  {
+    "url": "https://aarya.wtf/hero-intro-poster.jpg",
+    "path": "original/hero-intro-poster.jpg",
+    "status": 200,
+    "bytes": 512728,
+    "sha256": "5c2481d33fcb398024f3469b3c1df7541a6102dda1f0e46e4e842b6d08f74a91"
+  },
+  {
+    "url": "https://aarya.wtf/hero-intro.mp4",
+    "path": "original/hero-intro.mp4",
+    "status": 200,
+    "bytes": 1677223,
+    "sha256": "99e5f4d371e988e84997cd334b9c991268c2b8d4c1d38fd083dad963bd19f9ee"
+  },
+  {
+    "url": "https://aarya.wtf/hero-poster.jpg",
+    "path": "original/hero-poster.jpg",
+    "status": 200,
+    "bytes": 378118,
+    "sha256": "d8d0c38569bb80a51c4bbb5cad25cbae88f571aa7cc407aa984151727a3a3d69"
+  },
+  {
+    "url": "https://aarya.wtf/hero-tall-intro-poster.jpg",
+    "path": "original/hero-tall-intro-poster.jpg",
+    "status": 200,
+    "bytes": 347622,
+    "sha256": "44eaa667d541feb96415bb9e2e63264c56239d9be298dc3e756fe3fcd0d9af8f"
+  },
+  {
+    "url": "https://aarya.wtf/hero-tall-intro.mp4",
+    "path": "original/hero-tall-intro.mp4",
+    "status": 200,
+    "bytes": 1321609,
+    "sha256": "7f87755a5d8fbc77b03ffdce83b5dc828bad0c8f1f875c7cd9a3634e730f1e96"
+  },
+  {
+    "url": "https://aarya.wtf/hero-tall-poster.jpg",
+    "path": "original/hero-tall-poster.jpg",
+    "status": 200,
+    "bytes": 239459,
+    "sha256": "a9caa82730d6e6d6679f94f5dfb1baff9c0998fb89f71a56424f60a6001a47b2"
+  },
+  {
+    "url": "https://aarya.wtf/hero-tall.mp4",
+    "path": "original/hero-tall.mp4",
+    "status": 200,
+    "bytes": 3919923,
+    "sha256": "9491acddea1389fef1ffb0c1b280b8e5fd994886e8250c6f27fe5697baa3e443"
+  },
+  {
+    "url": "https://aarya.wtf/hero.mp4",
+    "path": "original/hero.mp4",
+    "status": 200,
+    "bytes": 5009739,
+    "sha256": "d83cb63dd93e8b59b533889aa0e14f78609d39c93d4957e1d9c72bd8bb770c5e"
+  },
+  {
+    "url": "https://aarya.wtf/minimal/",
+    "path": "original/minimal/index.html",
+    "status": 200,
+    "bytes": 15929,
+    "sha256": "7a8c46504ec5011bfc15af33196b5ba7bfe3c69d28764411c756927c3ca3889e"
+  },
+  {
+    "url": "https://aarya.wtf/minimal/aarya.jpg",
+    "path": "original/minimal/aarya.jpg",
+    "status": 200,
+    "bytes": 15466,
+    "sha256": "2f131d717a417c1114f26a55e1ba93ade2cc95a43b8369bfd2f0ee087e5064cd"
+  },
+  {
+    "url": "https://aarya.wtf/nature.js",
+    "path": "original/nature.js",
+    "status": 200,
+    "bytes": 13603,
+    "sha256": "c791e99668c0eba11eb9dd967909906b3c8729f3b2b93d444caec22f6c0a8eba"
+  },
+  {
+    "url": "https://aarya.wtf/og.jpg",
+    "path": "original/og.jpg",
+    "status": 200,
+    "bytes": 335317,
+    "sha256": "b1ff2e9883013b17fbd1af63f71dedb86303a6be437c1129b5f28509f4c8c70b"
+  },
+  {
+    "url": "https://aarya.wtf/paint.js",
+    "path": "original/paint.js",
+    "status": 200,
+    "bytes": 13039,
+    "sha256": "2b36763496768e99aa057e6786414f7f88a2fcc02a4fe3b1bb0cce20c3cbd30f"
+  },
+  {
+    "url": "https://aarya.wtf/photos/1.jpg",
+    "path": "original/photos/1.jpg",
+    "status": 200,
+    "bytes": 43123,
+    "sha256": "3cfe8dd27f8c15c7742379e10fc69fdf32d94a1d05922e61d748fc1501d1f6e1"
+  },
+  {
+    "url": "https://aarya.wtf/photos/2.jpg",
+    "path": "original/photos/2.jpg",
+    "status": 200,
+    "bytes": 81480,
+    "sha256": "d3eabe5a69a6ec1d536184cff4f880a23e6a666d28d0ac52976dbb235bfdd6d9"
+  },
+  {
+    "url": "https://aarya.wtf/photos/3.jpg",
+    "path": "original/photos/3.jpg",
+    "status": 200,
+    "bytes": 82214,
+    "sha256": "ec3bbb299f1f40a3ebc3286ccb11e577cc258a37648263c8904e3eb8118e8e85"
+  },
+  {
+    "url": "https://aarya.wtf/photos/4.jpg",
+    "path": "original/photos/4.jpg",
+    "status": 200,
+    "bytes": 57998,
+    "sha256": "4df1f5663dd9d647bf7d0a4ba61b79d37be324f5e51a80acd8c34484d8573796"
+  },
+  {
+    "url": "https://aarya.wtf/photos/5.jpg",
+    "path": "original/photos/5.jpg",
+    "status": 200,
+    "bytes": 131563,
+    "sha256": "dfe35694486dd939f6e317b91a9681f80c17f0d10276adcad3a6d117ffc98b2a"
+  },
+  {
+    "url": "https://aarya.wtf/picnic.js",
+    "path": "original/picnic.js",
+    "status": 200,
+    "bytes": 46056,
+    "sha256": "864aae50d8ead31459b0a027d9b3b90e196fd43d039c295c610eacaf00862e84"
+  },
+  {
+    "url": "https://aarya.wtf/print.js",
+    "path": "original/print.js",
+    "status": 200,
+    "bytes": 31682,
+    "sha256": "c2263cb5e374a53d49e3044453385f87611147aa89e765a0442ddda0340b5648"
+  },
+  {
+    "url": "https://aarya.wtf/props.js",
+    "path": "original/props.js",
+    "status": 200,
+    "bytes": 32331,
+    "sha256": "c17cc09be55528c8845a6a3ab7a656c8b642d50acd86e20835eb2614744b2d79"
+  },
+  {
+    "url": "https://aarya.wtf/scene.js",
+    "path": "original/scene.js",
+    "status": 200,
+    "bytes": 37975,
+    "sha256": "82649b256d445a1b128f1d48013cb318321a59f76e454b7fcb66849cfcb7e1d6"
+  },
+  {
+    "url": "https://aarya.wtf/sound.js",
+    "path": "original/sound.js",
+    "status": 200,
+    "bytes": 1208,
+    "sha256": "d1f206520cf15d5430fa56230b21650948317ed6044056389c9aa995a649bf10"
+  },
+  {
+    "url": "https://aarya.wtf/sound/garden.mp3",
+    "path": "original/sound/garden.mp3",
+    "status": 200,
+    "bytes": 1851647,
+    "sha256": "c8ebb564f231ea1e19b8b5b0115855dfbe724f327eb0aa1e1afb0139821183be"
+  },
+  {
+    "url": "https://aarya.wtf/sound/shutter.mp3",
+    "path": "original/sound/shutter.mp3",
+    "status": 200,
+    "bytes": 27315,
+    "sha256": "8dc70fd6d1d1c511ba5975b550dc903439b477be1ed97e33e7c44c6c4fd9bbea"
+  },
+  {
+    "url": "https://aarya.wtf/sound/slurp.mp3",
+    "path": "original/sound/slurp.mp3",
+    "status": 200,
+    "bytes": 9761,
+    "sha256": "506cb13da33b7f12f69d9acb86a5a0a4167e74a1703b5c4d84df1d8bfb46d96d"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/dayro.webp",
+    "path": "original/stamps/dayro.webp",
+    "status": 200,
+    "bytes": 399758,
+    "sha256": "3ca3150a47d1109e3e47677741acaa476a0ba663c8620904a8152e15cb7ad8d1"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/goalkeeper.webp",
+    "path": "original/stamps/goalkeeper.webp",
+    "status": 200,
+    "bytes": 411294,
+    "sha256": "44057f1ee9b073ef02e3ec9d4095c72bc9d60d34c84c834beed4c98330e7a5b3"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/lamad.webp",
+    "path": "original/stamps/lamad.webp",
+    "status": 200,
+    "bytes": 342226,
+    "sha256": "c45211dfad118a0057a95024e97b662818e2e1d587aa723202569e847d449af9"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/mini/dayro.webp",
+    "path": "original/stamps/mini/dayro.webp",
+    "status": 200,
+    "bytes": 20824,
+    "sha256": "5cfc2327b6cf0803dd117eb5d4f5c775702bb62cc832ebc4c0e49d82a4dc4fb2"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/mini/goalkeeper.webp",
+    "path": "original/stamps/mini/goalkeeper.webp",
+    "status": 200,
+    "bytes": 21182,
+    "sha256": "06dd78460adb41dea8a6bbc06351f9c4ea68c5e4f57c8b438fff0966c2e05192"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/mini/lamad.webp",
+    "path": "original/stamps/mini/lamad.webp",
+    "status": 200,
+    "bytes": 21722,
+    "sha256": "3f4df1d5c40113f3d0af5a848572f14cd000c71e7bb18da5db1ae5576cbb9f36"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/mini/phonepe.webp",
+    "path": "original/stamps/mini/phonepe.webp",
+    "status": 200,
+    "bytes": 23076,
+    "sha256": "92f1fc68910f6496776b00ac78e652e812917fb57183fc8e02deca1b2f23dc40"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/mini/prd-loop.webp",
+    "path": "original/stamps/mini/prd-loop.webp",
+    "status": 200,
+    "bytes": 27664,
+    "sha256": "64ed571eba71b46eb36b44b48543052531e90d9582a2a3260c1e46dd1eb18d16"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/mini/quickmart.webp",
+    "path": "original/stamps/mini/quickmart.webp",
+    "status": 200,
+    "bytes": 22082,
+    "sha256": "0976c32217935d94d822cbb8944266dc3db93b52c9365d6d1a1a9adce0f2035c"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/mini/ride-through-the-valley.webp",
+    "path": "original/stamps/mini/ride-through-the-valley.webp",
+    "status": 200,
+    "bytes": 22436,
+    "sha256": "a55ddcdbc1453beacdaed2442e52b76923526a048ebb4f8f8e2d272e3322cc14"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/mini/transporter.webp",
+    "path": "original/stamps/mini/transporter.webp",
+    "status": 200,
+    "bytes": 21884,
+    "sha256": "1dc6de6d36ce8cf602db8dfd92f54810df269c327bbc10b9e98f250dc5a3e54f"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/phonepe.webp",
+    "path": "original/stamps/phonepe.webp",
+    "status": 200,
+    "bytes": 396006,
+    "sha256": "7c7f9b56c79deb795745d9cc0946451bc8d8902ab0c52595ac2e2b2cfb7dfc2f"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/prd-loop.webp",
+    "path": "original/stamps/prd-loop.webp",
+    "status": 200,
+    "bytes": 430434,
+    "sha256": "09b7c0f023d202ea950edf71e5fe02bf08be0ac6031626ea17ce420b65c9e11f"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/quickmart.webp",
+    "path": "original/stamps/quickmart.webp",
+    "status": 200,
+    "bytes": 392616,
+    "sha256": "a503144407a042c9089cc2282fe3c3939e34a0ac193bd49b29be743462e613b5"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/ride-through-the-valley.webp",
+    "path": "original/stamps/ride-through-the-valley.webp",
+    "status": 200,
+    "bytes": 423330,
+    "sha256": "77e3e71437205b1195e310f10408917300c883b19f869bb92e02d7028522ff9d"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/transporter.webp",
+    "path": "original/stamps/transporter.webp",
+    "status": 200,
+    "bytes": 368976,
+    "sha256": "27d743182fa24e99e353a6316986cda772449f00f80e7ba9ca016789aa7f818a"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/intro.jpg",
+    "path": "original/work/assets/dayro/intro.jpg",
+    "status": 200,
+    "bytes": 27498,
+    "sha256": "914c0f212ac16fa14e79d088bdb6559e3aff7e20e26d3059944d520781f9d2dc"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/intro.mp4",
+    "path": "original/work/assets/dayro/intro.mp4",
+    "status": 200,
+    "bytes": 2364241,
+    "sha256": "f3abdd62bd35f45213c5c8e931b5891bd4662d7fe00f1809fe44103918b9c845"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/goalkeeper/launch.jpg",
+    "path": "original/work/assets/goalkeeper/launch.jpg",
+    "status": 200,
+    "bytes": 26498,
+    "sha256": "935be54843c844147ca41f547ab84a0c82a7126ac0b1f14a28122d88938678a4"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/goalkeeper/launch.mp4",
+    "path": "original/work/assets/goalkeeper/launch.mp4",
+    "status": 200,
+    "bytes": 9826056,
+    "sha256": "2068d23468d6efb4801ee97db4d998d8028203dbec37afb44ab5460aa0c20a46"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/intro.jpg",
+    "path": "original/work/assets/lamad/intro.jpg",
+    "status": 200,
+    "bytes": 43625,
+    "sha256": "7eeecbfa19903929788866c22b58e10cd7ce82ed1092680803358906240b2fae"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/intro.mp4",
+    "path": "original/work/assets/lamad/intro.mp4",
+    "status": 200,
+    "bytes": 3122894,
+    "sha256": "2e2886deaba8f502e8b0123d75cf9af4309ccec36eaaba7c132dc88f1bd7d6c9"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/phonepe/intro.jpg",
+    "path": "original/work/assets/phonepe/intro.jpg",
+    "status": 200,
+    "bytes": 37784,
+    "sha256": "74d1872183b22706b7725f956cdf1d044afaf05314b6f033f65c795a11ec386f"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/phonepe/intro.mp4",
+    "path": "original/work/assets/phonepe/intro.mp4",
+    "status": 200,
+    "bytes": 164233,
+    "sha256": "2423c4a7080323aa214d827e60cc2eebc30ffeae91925de1e53cdbce3b0aaf56"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/prd-loop/intro.jpg",
+    "path": "original/work/assets/prd-loop/intro.jpg",
+    "status": 200,
+    "bytes": 28275,
+    "sha256": "88bb6b48048dce0cb549fd2c78ec703fef75d09ccf1bf1d4eab5ce76a6905c4a"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/prd-loop/intro.mp4",
+    "path": "original/work/assets/prd-loop/intro.mp4",
+    "status": 200,
+    "bytes": 1180151,
+    "sha256": "b7862248da565b0a60f4c3378cb9b2ac074fd3ab3cf8e32d917d5bda8aa2a5f8"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/quickmart/intro.jpg",
+    "path": "original/work/assets/quickmart/intro.jpg",
+    "status": 200,
+    "bytes": 115793,
+    "sha256": "1f84c4fb869409641a3410373c5321dbb3034ccfaebfe78b1e0f9ab2cd107515"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/quickmart/intro.mp4",
+    "path": "original/work/assets/quickmart/intro.mp4",
+    "status": 200,
+    "bytes": 4898419,
+    "sha256": "7da3a0ed11a0ef6fab21a59f8c8e077897af3326761f6913eaf5fe39825b158d"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/ride/thumb.jpg",
+    "path": "original/work/assets/ride/thumb.jpg",
+    "status": 200,
+    "bytes": 191515,
+    "sha256": "107c79d17785bb7537a4a52ac7d4e56d3485e7da3c834c57b9bf83b19f109657"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/intro.jpg",
+    "path": "original/work/assets/transporter/intro.jpg",
+    "status": 200,
+    "bytes": 58722,
+    "sha256": "bb006eb4b22ddf99ffb60d38792c0c64ff325c46d90b91bf220b5cc324eafbcd"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/intro.mp4",
+    "path": "original/work/assets/transporter/intro.mp4",
+    "status": 200,
+    "bytes": 7804865,
+    "sha256": "cb83431f6ef5ec39d0552e87b79f4be713f6bde87f1a0adba5e32ae7d0ad47be"
+  },
+  {
+    "url": "https://aarya.wtf/work/dayro.html",
+    "path": "original/work/dayro.html",
+    "status": 200,
+    "bytes": 45465,
+    "sha256": "5184705d5fb4205205dd512a74dbebcc056ce00506f58b2a88f7c6797ab7866e"
+  },
+  {
+    "url": "https://aarya.wtf/work/dayro.html?minimal",
+    "path": "original/work/dayro.html",
+    "status": 200,
+    "bytes": 45465,
+    "sha256": "5184705d5fb4205205dd512a74dbebcc056ce00506f58b2a88f7c6797ab7866e"
+  },
+  {
+    "url": "https://aarya.wtf/work/goalkeeper.html",
+    "path": "original/work/goalkeeper.html",
+    "status": 200,
+    "bytes": 34481,
+    "sha256": "418cf4c15297725a9e5dbd559def4ba2bbe7f912acf3f9f2dab3b10edc8a31d6"
+  },
+  {
+    "url": "https://aarya.wtf/work/goalkeeper.html?minimal",
+    "path": "original/work/goalkeeper.html",
+    "status": 200,
+    "bytes": 34481,
+    "sha256": "418cf4c15297725a9e5dbd559def4ba2bbe7f912acf3f9f2dab3b10edc8a31d6"
+  },
+  {
+    "url": "https://aarya.wtf/work/lamad.html",
+    "path": "original/work/lamad.html",
+    "status": 200,
+    "bytes": 36964,
+    "sha256": "18db0a2969c337afdd023985901e840f54435c2d00b215cf72dbc0936c9d1abc"
+  },
+  {
+    "url": "https://aarya.wtf/work/lamad.html?minimal",
+    "path": "original/work/lamad.html",
+    "status": 200,
+    "bytes": 36964,
+    "sha256": "18db0a2969c337afdd023985901e840f54435c2d00b215cf72dbc0936c9d1abc"
+  },
+  {
+    "url": "https://aarya.wtf/work/phonepe.html",
+    "path": "original/work/phonepe.html",
+    "status": 200,
+    "bytes": 30408,
+    "sha256": "e5f83bb6e66477c22917b53b46cb57c61e4972e27677aa77ae141cb757b7ce23"
+  },
+  {
+    "url": "https://aarya.wtf/work/phonepe.html?minimal",
+    "path": "original/work/phonepe.html",
+    "status": 200,
+    "bytes": 30408,
+    "sha256": "e5f83bb6e66477c22917b53b46cb57c61e4972e27677aa77ae141cb757b7ce23"
+  },
+  {
+    "url": "https://aarya.wtf/work/prd-loop.html",
+    "path": "original/work/prd-loop.html",
+    "status": 200,
+    "bytes": 20852,
+    "sha256": "aa7513fa1ed83bd89d41c38c2ce3c4abdb869a9c413bac0ede69ae02e095cfde"
+  },
+  {
+    "url": "https://aarya.wtf/work/prd-loop.html?minimal",
+    "path": "original/work/prd-loop.html",
+    "status": 200,
+    "bytes": 20852,
+    "sha256": "aa7513fa1ed83bd89d41c38c2ce3c4abdb869a9c413bac0ede69ae02e095cfde"
+  },
+  {
+    "url": "https://aarya.wtf/work/quickmart.html",
+    "path": "original/work/quickmart.html",
+    "status": 200,
+    "bytes": 43563,
+    "sha256": "7ca5a6ced9a100e0932773acfdf08b32aba3f9edf38890a2289db9cc997cc593"
+  },
+  {
+    "url": "https://aarya.wtf/work/quickmart.html?minimal",
+    "path": "original/work/quickmart.html",
+    "status": 200,
+    "bytes": 43563,
+    "sha256": "7ca5a6ced9a100e0932773acfdf08b32aba3f9edf38890a2289db9cc997cc593"
+  },
+  {
+    "url": "https://aarya.wtf/work/ride-through-the-valley.html",
+    "path": "original/work/ride-through-the-valley.html",
+    "status": 200,
+    "bytes": 10790,
+    "sha256": "7090ff3744254981dbd0def7c49ae1493c77d591bec17666a87fb6f3962a6ce6"
+  },
+  {
+    "url": "https://aarya.wtf/work/ride-through-the-valley.html?minimal",
+    "path": "original/work/ride-through-the-valley.html",
+    "status": 200,
+    "bytes": 10790,
+    "sha256": "7090ff3744254981dbd0def7c49ae1493c77d591bec17666a87fb6f3962a6ce6"
+  },
+  {
+    "url": "https://aarya.wtf/work/transporter.html",
+    "path": "original/work/transporter.html",
+    "status": 200,
+    "bytes": 55819,
+    "sha256": "131cfde250374e96652df388840a6a1e8081d4f032d86043693d9b7783106d34"
+  },
+  {
+    "url": "https://aarya.wtf/work/transporter.html?minimal",
+    "path": "original/work/transporter.html",
+    "status": 200,
+    "bytes": 55819,
+    "sha256": "131cfde250374e96652df388840a6a1e8081d4f032d86043693d9b7783106d34"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/calendar.webp",
+    "path": "original/work/assets/calendar.webp",
+    "status": 200,
+    "bytes": 7448,
+    "sha256": "4ab2e9e1a902a5d15d82f9b34ab56a16fef535aa101e465e20e7a241577c58e2"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/energy.png",
+    "path": "original/work/assets/dayro/energy.png",
+    "status": 200,
+    "bytes": 49763,
+    "sha256": "e7c39d717b22a70be5decd56b7b994cc5f2c80214714d51fd71620ce01ea9efb"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/home_client.png",
+    "path": "original/work/assets/dayro/home_client.png",
+    "status": 200,
+    "bytes": 109007,
+    "sha256": "2e4432b55cf7c9fec34765acdee60bb3afe5a5cccd867a55090571bb6fc72d3e"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/home_final.png",
+    "path": "original/work/assets/dayro/home_final.png",
+    "status": 200,
+    "bytes": 71182,
+    "sha256": "9f40b5dcf87fe608f9b2974a1d1e1bbd6ce6dbc78b47a776ba31af6a6fe26c8e"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/home_wire.png",
+    "path": "original/work/assets/dayro/home_wire.png",
+    "status": 200,
+    "bytes": 32625,
+    "sha256": "873ab9e898c914ddc1f8c3c2abded09a73493232a22abaa6afa9577341cc90f1"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/hw_assoc.png",
+    "path": "original/work/assets/dayro/hw_assoc.png",
+    "status": 200,
+    "bytes": 36157,
+    "sha256": "6e5a43378ce6c8d61a80bc4cfd61ff894899abfba93bcba9571cd40f5d841119"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/hw_config.png",
+    "path": "original/work/assets/dayro/hw_config.png",
+    "status": 200,
+    "bytes": 43279,
+    "sha256": "71698c37184af26bf5336cdbe92c3fb38ee9229464caafb0ce5a4919135ecf6a"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/out_store.jpg",
+    "path": "original/work/assets/dayro/out_store.jpg",
+    "status": 200,
+    "bytes": 147580,
+    "sha256": "8974784d94875fbf12ba5d3e32b251a99a36142e63d01bc9c4c958b6dc45a88d"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/out_switchboard.jpg",
+    "path": "original/work/assets/dayro/out_switchboard.jpg",
+    "status": 200,
+    "bytes": 62915,
+    "sha256": "96f4029cde508919a1ed26f1f6d2521a1704b00dd561b3066dc216f392c1c81e"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/s3_phoneA.png",
+    "path": "original/work/assets/dayro/s3_phoneA.png",
+    "status": 200,
+    "bytes": 98612,
+    "sha256": "d8858f0abb8722744f26b824dedf18eac968d756a101c66e5b32861613edf44b"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/s3_phoneB.png",
+    "path": "original/work/assets/dayro/s3_phoneB.png",
+    "status": 200,
+    "bytes": 198825,
+    "sha256": "148501295e221fd989248c93a8183937f7a703e229821683ea8796bf7ea36d53"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/scene_add.png",
+    "path": "original/work/assets/dayro/scene_add.png",
+    "status": 200,
+    "bytes": 25989,
+    "sha256": "9dd9a8f45525009dfb0f8155450f0f392169a4fbf8591ff7f175afee5e631839"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/scene_main.png",
+    "path": "original/work/assets/dayro/scene_main.png",
+    "status": 200,
+    "bytes": 33651,
+    "sha256": "3dfda014d296e44feb22e6a04803196627686c0af2992a79b0122f5ffb63a87e"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/scene_temp.png",
+    "path": "original/work/assets/dayro/scene_temp.png",
+    "status": 200,
+    "bytes": 24019,
+    "sha256": "1944d44096c7dd7906c5f3912bd068836eea1fe53e9c3c637444af5d104a89bd"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/scene_time.png",
+    "path": "original/work/assets/dayro/scene_time.png",
+    "status": 200,
+    "bytes": 26705,
+    "sha256": "cdd78e1e080bf44a858e73e7b20e160ce9f882c3841b9c6dbf8d6a8f32c4d99b"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/dayro/scene_weather.png",
+    "path": "original/work/assets/dayro/scene_weather.png",
+    "status": 200,
+    "bytes": 22927,
+    "sha256": "bb8a5a94813708a51fea8c212292e4f84d1c98923aa5375c2c75cadf693ad27b"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/gmail.jpg",
+    "path": "original/work/assets/gmail.jpg",
+    "status": 200,
+    "bytes": 7621,
+    "sha256": "1564bdb2e7cc472641d094256b3e4bc878ad520cf87f2e24d6c7fcab6b419d82"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/ac-1-org.png",
+    "path": "original/work/assets/lamad/ac-1-org.png",
+    "status": 200,
+    "bytes": 170123,
+    "sha256": "e60a634f7d86cdc203842960d390c24fd9968497a5873282b9c10f3ea5c875fe"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/ac-2-edit.png",
+    "path": "original/work/assets/lamad/ac-2-edit.png",
+    "status": 200,
+    "bytes": 147161,
+    "sha256": "db2d9aedbf4ce2656cfbfb2863f2e7752919969866c6d2e55b755f8aef198231"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/entities.png",
+    "path": "original/work/assets/lamad/entities.png",
+    "status": 200,
+    "bytes": 69641,
+    "sha256": "42f7b65afa364fc304050bebb363ac8e9c64aa718b5a23293fe563326db6c016"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/ia.png",
+    "path": "original/work/assets/lamad/ia.png",
+    "status": 200,
+    "bytes": 84581,
+    "sha256": "d99009689d145e841f0140d96f3e95758b3be3b2138c847c2b71f16b958379b4"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/notion-map.png",
+    "path": "original/work/assets/lamad/notion-map.png",
+    "status": 200,
+    "bytes": 407266,
+    "sha256": "d90c49f7903f4c912b51eab5676672c7d7ae135738f0b4a9d324ceb75f21ec43"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/po-1-parties.png",
+    "path": "original/work/assets/lamad/po-1-parties.png",
+    "status": 200,
+    "bytes": 114570,
+    "sha256": "9fd49deb960cbafe60bf9c87170cc1880bf16fd3b3d885e0010118cbd7ac372c"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/po-2-items.png",
+    "path": "original/work/assets/lamad/po-2-items.png",
+    "status": 200,
+    "bytes": 68302,
+    "sha256": "c5d15dea04ffa6bcde1c8d47c4e44240390556ab63ae90d8f654d401e046a8df"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/po-3-terms.png",
+    "path": "original/work/assets/lamad/po-3-terms.png",
+    "status": 200,
+    "bytes": 110989,
+    "sha256": "10c59304ac75264c2d733ccbbe77fe9cd85bb6ae9bcac625b94763f677c3d80e"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/po-4-preview.png",
+    "path": "original/work/assets/lamad/po-4-preview.png",
+    "status": 200,
+    "bytes": 146539,
+    "sha256": "d1ec114a33b118657959bad5b059bfe9a076fc23c766d2c23a984b7747e07e4b"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/sp-1-kanban.png",
+    "path": "original/work/assets/lamad/sp-1-kanban.png",
+    "status": 200,
+    "bytes": 196416,
+    "sha256": "2df84a26ea84d66e3234d3bf6aa4f4b6b18378cdc60efa075baeeca41e1058fd"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/sp-2-dashboard.png",
+    "path": "original/work/assets/lamad/sp-2-dashboard.png",
+    "status": 200,
+    "bytes": 158072,
+    "sha256": "f3230df1fd6b0ad22bef894cd05cce649a2814a056ad29001d93373b510eb552"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/svr-1-detail.png",
+    "path": "original/work/assets/lamad/svr-1-detail.png",
+    "status": 200,
+    "bytes": 199024,
+    "sha256": "13efdb39ff40ffdc239bfb34981e853ed2fec46e800290ae5e906ff1dd662afd"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/svr-2-listing.png",
+    "path": "original/work/assets/lamad/svr-2-listing.png",
+    "status": 200,
+    "bytes": 161191,
+    "sha256": "72720d322413c092f5fa5bf1d4ccfb3e87cd1e95f78970185ffa820cf8c910eb"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/vg-1-rfq.png",
+    "path": "original/work/assets/lamad/vg-1-rfq.png",
+    "status": 200,
+    "bytes": 173195,
+    "sha256": "17b0fe180c75e3dc455a6ac4510cda25479db4a7bca7e4771a8a839b65c701ad"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/lamad/vg-2-confirm.png",
+    "path": "original/work/assets/lamad/vg-2-confirm.png",
+    "status": 200,
+    "bytes": 155726,
+    "sha256": "583af7de3e0391a75a25d256825acf6e3d7ce81780f613222506b3d8ad2ee09a"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/notion.jpg",
+    "path": "original/work/assets/notion.jpg",
+    "status": 200,
+    "bytes": 11548,
+    "sha256": "7465e504970eedbb5c28344e24179b08847b56ddab2e11e4a4fb3437630005b7"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/phonepe/before.webp",
+    "path": "original/work/assets/phonepe/before.webp",
+    "status": 200,
+    "bytes": 100780,
+    "sha256": "03c0ac04468b2b19b38bec9f09e56bde4b81980852317beb1cbc211b8a18215c"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/phonepe/idv-dial.webp",
+    "path": "original/work/assets/phonepe/idv-dial.webp",
+    "status": 200,
+    "bytes": 30336,
+    "sha256": "039c80c8f49868c2fe3a9ffbc0bbe3312cbc6f3cbac5479ae3df382c3dbeb2a3"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/phonepe/iterations.webp",
+    "path": "original/work/assets/phonepe/iterations.webp",
+    "status": 200,
+    "bytes": 84614,
+    "sha256": "26e3c39945eab7021ebc849f8c32a4d4391e4c29ccf1b0048428c08c3432f301"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/prd-loop/claude-spark.png",
+    "path": "original/work/assets/prd-loop/claude-spark.png",
+    "status": 200,
+    "bytes": 31832,
+    "sha256": "f3984c78886c806c240741e76f2bd21678211d0f4b2ae649e8655d1824e4c338"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/quickmart/c_business.png",
+    "path": "original/work/assets/quickmart/c_business.png",
+    "status": 200,
+    "bytes": 270427,
+    "sha256": "ad373d6ac380a26667481cbafb214942663462262634228208ff93099e3b2b97"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/quickmart/c_corporate.png",
+    "path": "original/work/assets/quickmart/c_corporate.png",
+    "status": 200,
+    "bytes": 237829,
+    "sha256": "34b16701382a1c48a83a5b213c488ba10059cf48439f19d67eccdf8f69baf18f"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/quickmart/c_individual.png",
+    "path": "original/work/assets/quickmart/c_individual.png",
+    "status": 200,
+    "bytes": 120126,
+    "sha256": "eab9d9b751bba831a1e3466fa00836756f3bd5a02ea5664af256b1dcfbb58a63"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/quickmart/p_polo.png",
+    "path": "original/work/assets/quickmart/p_polo.png",
+    "status": 200,
+    "bytes": 18788,
+    "sha256": "f3104094c8adf7bc94ed2914b8e91b051b84ccffafd4a09a2dc76d5c8d3c0ab8"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/quickmart/store_summary.png",
+    "path": "original/work/assets/quickmart/store_summary.png",
+    "status": 200,
+    "bytes": 174102,
+    "sha256": "d54720695be6d8e574b77178ef71f6f712404166613713b803140feecf12d596"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/quickmart/xfer_detail.png",
+    "path": "original/work/assets/quickmart/xfer_detail.png",
+    "status": 200,
+    "bytes": 334447,
+    "sha256": "344e61dc5ed07959d0a173f3477a62d7dda2d0eac8ce6d52d84c8468566ad860"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/quickmart/xfer_form.png",
+    "path": "original/work/assets/quickmart/xfer_form.png",
+    "status": 200,
+    "bytes": 111838,
+    "sha256": "577b190ba0da6ffcfcbf938bfe6f76c2c756719f1d5294c1ec7d069dcc92869f"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/quickmart/zoomed.png",
+    "path": "original/work/assets/quickmart/zoomed.png",
+    "status": 200,
+    "bytes": 119457,
+    "sha256": "8ddc152e81ffa470a678160a6439e6a6b577a94600c829e21dfb74e4442a9e22"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/slack.jpg",
+    "path": "original/work/assets/slack.jpg",
+    "status": 200,
+    "bytes": 9388,
+    "sha256": "01256d209347a34514417b0d5fa78e672da60fab69b8fa12862335754d66c385"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/swiggy.jpg",
+    "path": "original/work/assets/swiggy.jpg",
+    "status": 200,
+    "bytes": 7212,
+    "sha256": "d10e1ba86fa6fe813b468a83ab632c6dfcba2e802e403677c1aa475fc56f7146"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/ao_cargo.png",
+    "path": "original/work/assets/transporter/ao_cargo.png",
+    "status": 200,
+    "bytes": 264045,
+    "sha256": "4b7ebc6d7f4ecff6cd75edb56a4e463a8c36118bc902889f5c9c897a05fbc40a"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/ao_companies.png",
+    "path": "original/work/assets/transporter/ao_companies.png",
+    "status": 200,
+    "bytes": 173617,
+    "sha256": "c789b96b4eca15568b807295352b8bc8c720926771ed31e3cd61df4037ee28f5"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/ao_docs.png",
+    "path": "original/work/assets/transporter/ao_docs.png",
+    "status": 200,
+    "bytes": 266130,
+    "sha256": "5aa091783e605684edb30a3504094972cc9640b024bab177ff106a34d3c9dfbd"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/ao_payment.png",
+    "path": "original/work/assets/transporter/ao_payment.png",
+    "status": 200,
+    "bytes": 258256,
+    "sha256": "a25b01af09fae7770b90f07ac8ce0aa213e86bbb87f5708160cd41fb37482aa4"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/ao_route.png",
+    "path": "original/work/assets/transporter/ao_route.png",
+    "status": 200,
+    "bytes": 261176,
+    "sha256": "28701805fb892cc0db525da4fd6e5f751b1d6e305e5190ad953755943d5951da"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/combined_flow.png",
+    "path": "original/work/assets/transporter/combined_flow.png",
+    "status": 200,
+    "bytes": 325017,
+    "sha256": "d3f8d7d2addc9187159a0b00cc30855aa785adf48be9b6ca58b46af5d6bf6896"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/driver_face.png",
+    "path": "original/work/assets/transporter/driver_face.png",
+    "status": 200,
+    "bytes": 45788,
+    "sha256": "0f00f713a073bbfa6964971473e538d13605daedff7d1337ec21822e1f59c354"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/h_attendant.png",
+    "path": "original/work/assets/transporter/h_attendant.png",
+    "status": 200,
+    "bytes": 63315,
+    "sha256": "843bb533b79ebddbab360ab0ca02ba2deac5865f14ebc09a9cd67935b8f4370f"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/h_customer.png",
+    "path": "original/work/assets/transporter/h_customer.png",
+    "status": 200,
+    "bytes": 60462,
+    "sha256": "be49655e1fbdf6a3869313065027278e0f6f785c44c204a0dc86586e819e3d59"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/h_depot.png",
+    "path": "original/work/assets/transporter/h_depot.png",
+    "status": 200,
+    "bytes": 54905,
+    "sha256": "25c9e13d42cf9b3c98a2b576de32cdd226e7a4fb3eeebee93287c8a9aef4c298"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/h_driver.png",
+    "path": "original/work/assets/transporter/h_driver.png",
+    "status": 200,
+    "bytes": 66670,
+    "sha256": "3372b97db335591073823dcba3aad775edb6e3a04a9e3e957d61658e94666c9c"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/p_trip.png",
+    "path": "original/work/assets/transporter/p_trip.png",
+    "status": 200,
+    "bytes": 341937,
+    "sha256": "78e749db64a4bdc9873f776184b86d3193fcc252705553877f3e074d1b885014"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/transporter/whiteboard.jpg",
+    "path": "original/work/assets/transporter/whiteboard.jpg",
+    "status": 200,
+    "bytes": 224033,
+    "sha256": "6af6d6157327abb57da188b53e6c89fc81a81a9d2c0f5e57dbdef89275b76101"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/uber.jpg",
+    "path": "original/work/assets/uber.jpg",
+    "status": 200,
+    "bytes": 7246,
+    "sha256": "7513fbf9412ff2427728b75d9bd7bf33ad9aa444d0f6deeb676f21eba2ee6d0d"
+  },
+  {
+    "url": "https://aarya.wtf/work/assets/whatsapp.png",
+    "path": "original/work/assets/whatsapp.png",
+    "status": 200,
+    "bytes": 11876,
+    "sha256": "b5bfb2239dc57fc1c619ed64b1f1475a5a614b98b7b12efe18e113d5f24bc7cb"
+  },
+  {
+    "url": "https://aarya.wtf/work/claude-demo.js",
+    "path": "original/work/claude-demo.js",
+    "status": 200,
+    "bytes": 11473,
+    "sha256": "bfbbc188b19bf5fec9bb29822151717a327afb31fbf4eb39eeb67e24ebac7e97"
+  },
+  {
+    "url": "https://aarya.wtf/work/gk/board.html?b=",
+    "path": "original/work/gk/board.html",
+    "status": 200,
+    "bytes": 457,
+    "sha256": "21277518f7c74a9d20808ac08e19f785e352653bacb0017e4cd9fb84d399bd48"
+  },
+  {
+    "url": "https://aarya.wtf/work/more.js",
+    "path": "original/work/more.js",
+    "status": 200,
+    "bytes": 3688,
+    "sha256": "57da2426b65988eedb06b2bc9e91b764dae7f245d4110a720a65b4ba63dc047e"
+  },
+  {
+    "url": "https://aarya.wtf/work/og/dayro.jpg",
+    "path": "original/work/og/dayro.jpg",
+    "status": 200,
+    "bytes": 179337,
+    "sha256": "135dc39826849a492cb2e1c979f94f65edcfd78087b9584b631085f8f0c8242b"
+  },
+  {
+    "url": "https://aarya.wtf/work/og/goalkeeper.jpg",
+    "path": "original/work/og/goalkeeper.jpg",
+    "status": 200,
+    "bytes": 174498,
+    "sha256": "de2274852401a427ef886c299bbfaccc74390397ddb0b19f50ed87be47e3c26b"
+  },
+  {
+    "url": "https://aarya.wtf/work/og/lamad.jpg",
+    "path": "original/work/og/lamad.jpg",
+    "status": 200,
+    "bytes": 174844,
+    "sha256": "95b321271f17bdb31f966f7deef6774850a5ce167ad1a369c2134f69a3b72a60"
+  },
+  {
+    "url": "https://aarya.wtf/work/og/phonepe.jpg",
+    "path": "original/work/og/phonepe.jpg",
+    "status": 200,
+    "bytes": 187586,
+    "sha256": "411c30247b90d1bbd41a475908dcacee8ad5b3dc1961c9763d99a91a298ebe43"
+  },
+  {
+    "url": "https://aarya.wtf/work/og/prd-loop.jpg",
+    "path": "original/work/og/prd-loop.jpg",
+    "status": 200,
+    "bytes": 127897,
+    "sha256": "5bc44e2dab065d883905b3aabc1777031d134b731c88576e9399b851ea0c3ca2"
+  },
+  {
+    "url": "https://aarya.wtf/work/og/quickmart.jpg",
+    "path": "original/work/og/quickmart.jpg",
+    "status": 200,
+    "bytes": 179209,
+    "sha256": "93336158986e3672b6dbc4112062e815fef5615a41450c72abf0992f6d678d84"
+  },
+  {
+    "url": "https://aarya.wtf/work/og/ride-through-the-valley.jpg",
+    "path": "original/work/og/ride-through-the-valley.jpg",
+    "status": 200,
+    "bytes": 188105,
+    "sha256": "dfeaf49ff92f4517d79ed64c24d3430ed1f044fa79404425d7279951c89fa981"
+  },
+  {
+    "url": "https://aarya.wtf/work/og/transporter.jpg",
+    "path": "original/work/og/transporter.jpg",
+    "status": 200,
+    "bytes": 177359,
+    "sha256": "f8c97a4243424851a4f35781f52a44d0cab7964d90857e9d7366226df00b3ed4"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/",
+    "path": "original/work/pp/index.html",
+    "status": 200,
+    "bytes": 17826,
+    "sha256": "27df70ba546cb7c678b68d38fc73ac9b31da1846dc9ee9a5f0fc144e85774da0"
+  },
+  {
+    "url": "https://aarya.wtf/stamps/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/claude-spark.png",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/gk/dc.js",
+    "path": "original/work/gk/dc.js",
+    "status": 200,
+    "bytes": 4971,
+    "sha256": "0c6473d30dbce7ba96e7e180254bd5f0bbb377da4ae6e069b98eb9948e5722ee"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/entry-4fd65da73274df3995c15ebf2adcec2f.js",
+    "path": "original/work/pp/_expo/static/js/web/entry-4fd65da73274df3995c15ebf2adcec2f.js",
+    "status": 200,
+    "bytes": 3000766,
+    "sha256": "27d0558ab0d12c691e37c6541cb9a75b90a84a4d1e2dd0cd54c7228b4e7509ac"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/favicon.ico",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/bundleMode/index.js",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/bundleMode/shims/*.js",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/com.adobe.pdf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/expo-router/build/views/Navigator.js",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/expo-router/build/views/Sitemap.js",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/expo-router/build/views/Unmatched.js",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/lib/module/index.js",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/n.css",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/plugin/index.js",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/react-native.config.js",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/_expo/static/js/web/scripts/validate-react-native-version.js",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/bank-axis.8f9a71b050f33df8b813e06a939e383f.png",
+    "path": "original/work/pp/assets/assets/images/bank-axis.8f9a71b050f33df8b813e06a939e383f.png",
+    "status": 200,
+    "bytes": 1017,
+    "sha256": "e3670badae29d9f3d08786e55cb066ca63f644d59b42b9014b6bd964c5991bef"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/bank-boa.43f55f66651a37ff374d52757e8ad879.png",
+    "path": "original/work/pp/assets/assets/images/bank-boa.43f55f66651a37ff374d52757e8ad879.png",
+    "status": 200,
+    "bytes": 4189,
+    "sha256": "d42a3169ba5e372a1813988fff0f3934f36e5cd55f404c28c3cd71c0cddd7bcf"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/bank-citi.d3552d66b7377a2faa2af0db5b3e9fb7.png",
+    "path": "original/work/pp/assets/assets/images/bank-citi.d3552d66b7377a2faa2af0db5b3e9fb7.png",
+    "status": 200,
+    "bytes": 3223,
+    "sha256": "ab2c3ec3e14a64c5e82b78495e44c7013db7096f56aba5efb8cc72cc919d301c"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/bank-hdfc.b499d053f0b43792925e04dc072416bf.png",
+    "path": "original/work/pp/assets/assets/images/bank-hdfc.b499d053f0b43792925e04dc072416bf.png",
+    "status": 200,
+    "bytes": 37138,
+    "sha256": "716e8eea9f062815c19355b264e8060de0125902dd325df2746aa422d20f34c1"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/bank-icici.76d650f33c2539adbd0f26d5b91a34c5.png",
+    "path": "original/work/pp/assets/assets/images/bank-icici.76d650f33c2539adbd0f26d5b91a34c5.png",
+    "status": 200,
+    "bytes": 66963,
+    "sha256": "8a050ea5529fd20601102b346c686b382eacf5c8558b74e42725b9fb98f88d1a"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/cover-accidental.1499fdd8d5ffe63271450f4e3be4e087.png",
+    "path": "original/work/pp/assets/assets/images/cover-accidental.1499fdd8d5ffe63271450f4e3be4e087.png",
+    "status": 200,
+    "bytes": 1785,
+    "sha256": "1f54d6cd3ad9d8527ff29a34508c69554e4ef40873ae5c2f69672e38282c15d9"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/cover-calamity.620cd2d9d7e39be79f217c668440b53e.png",
+    "path": "original/work/pp/assets/assets/images/cover-calamity.620cd2d9d7e39be79f217c668440b53e.png",
+    "status": 200,
+    "bytes": 1174,
+    "sha256": "0a37072c236b4d8e20d00324c1f1606a47b5d52ed717ed01be1c89ea0d6a6c1f"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/cover-thirdparty.0ac8b1cf0c89159d0ce82f26540ecc77.png",
+    "path": "original/work/pp/assets/assets/images/cover-thirdparty.0ac8b1cf0c89159d0ce82f26540ecc77.png",
+    "status": 200,
+    "bytes": 1397,
+    "sha256": "ceb4deff632b96a5ee40f959a8f78aa763e7ce54551a0a06594136a195782727"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/hero-banner.a57f5178623e2d0d0935457fae806e0b.png",
+    "path": "original/work/pp/assets/assets/images/hero-banner.a57f5178623e2d0d0935457fae806e0b.png",
+    "status": 200,
+    "bytes": 79689,
+    "sha256": "7f7dd8a6804317c82cdbfd30598f34dc632acc96261130f60459422fbf9162e4"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/icon-share.eb84dfa18579d09ac2bc3bbc64770dae.png",
+    "path": "original/work/pp/assets/assets/images/icon-share.eb84dfa18579d09ac2bc3bbc64770dae.png",
+    "status": 200,
+    "bytes": 404,
+    "sha256": "ab78706794d0b6f1888c08ce88ff76ac851e44f48fc384f800f83b0b263f4201"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/new-car.ff95889bbbc3c104064d28988e3828c3.png",
+    "path": "original/work/pp/assets/assets/images/new-car.ff95889bbbc3c104064d28988e3828c3.png",
+    "status": 200,
+    "bytes": 29227,
+    "sha256": "b4c55d45ca6749f04aac573a1785d2e169b8fa4e970baa7c96ca45ab6f474f82"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/nexon-glow.b6560c37d4d968c8b76a96b50796fc15.png",
+    "path": "original/work/pp/assets/assets/images/nexon-glow.b6560c37d4d968c8b76a96b50796fc15.png",
+    "status": 200,
+    "bytes": 194438,
+    "sha256": "235dc8bf9997bf51f6de08ab6d2bacb37110c49a1d5c34a370b22f5353da6e5f"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/nexon-main.910af746984e19f383055d8870179f8e.png",
+    "path": "original/work/pp/assets/assets/images/nexon-main.910af746984e19f383055d8870179f8e.png",
+    "status": 200,
+    "bytes": 231767,
+    "sha256": "392512d8e19fb2274a296eaab96843dd322400ff8a54481f6abb102929e5d14c"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/nexon-side-glow.8009d2b60ccda17a5eedf12ed44415c3.png",
+    "path": "original/work/pp/assets/assets/images/nexon-side-glow.8009d2b60ccda17a5eedf12ed44415c3.png",
+    "status": 200,
+    "bytes": 109066,
+    "sha256": "3877b5da2b5b2c9ec9a49e0f26fdb8a5ebfd7a907112f68c81a799941353d291"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/nexon-side-grey.2409ad286808d639ff2d97156c90098c.png",
+    "path": "original/work/pp/assets/assets/images/nexon-side-grey.2409ad286808d639ff2d97156c90098c.png",
+    "status": 200,
+    "bytes": 447683,
+    "sha256": "6e0961f186179854ee188b9ead13eeebd7659584db098b4c734329cc5fc67ec1"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/nexon-side.7e87b0f5ec26a3b29f4d7f4624932a6f.png",
+    "path": "original/work/pp/assets/assets/images/nexon-side.7e87b0f5ec26a3b29f4d7f4624932a6f.png",
+    "status": 200,
+    "bytes": 771574,
+    "sha256": "b0d27a50bac41a87e4918c755acfc996973b6399f77dfc3ac559a9947b7f39fe"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/nexon.bd5391c1634b9c7f37daef17d9166054.png",
+    "path": "original/work/pp/assets/assets/images/nexon.bd5391c1634b9c7f37daef17d9166054.png",
+    "status": 200,
+    "bytes": 99785,
+    "sha256": "bd01128f2d11acc2c8cc7cc51ced6c3b5bd63b8736a1f433455025baf51c5fe8"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/other-vehicle.c09ac47a474b08732ef99e88ce125934.png",
+    "path": "original/work/pp/assets/assets/images/other-vehicle.c09ac47a474b08732ef99e88ce125934.png",
+    "status": 200,
+    "bytes": 43652,
+    "sha256": "d6c8f799544ecaa78b52162ca928c0b1ef2bae716ece8fc1a3c999ddee227a64"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/plan-illus-color.4c521b134cba26ea3b60b47344277bcd.png",
+    "path": "original/work/pp/assets/assets/images/plan-illus-color.4c521b134cba26ea3b60b47344277bcd.png",
+    "status": 200,
+    "bytes": 522702,
+    "sha256": "9fedacdcbc92e435cd704615019eed11eb554781b66967535d90dfe7f798ff47"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/plan-illus-third.4ea8bb504dc4e97a25abba7dc4faff37.png",
+    "path": "original/work/pp/assets/assets/images/plan-illus-third.4ea8bb504dc4e97a25abba7dc4faff37.png",
+    "status": 200,
+    "bytes": 426949,
+    "sha256": "2f36d45342a096de6a7204bdff76c4a472a11c03a583b15eccd773505ab89d41"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/assets/images/splash-glyph.e5aaf4bf08f5f87a315e3f77a8ee819e.png",
+    "path": "original/work/pp/assets/assets/images/splash-glyph.e5aaf4bf08f5f87a315e3f77a8ee819e.png",
+    "status": 200,
+    "bytes": 16062,
+    "sha256": "9383a0be67e7dbb238318bdb50e8d03cea0d5f4cdd42820d5d6f958af80c870f"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/arrow_down.017bc6ba3fc25503e5eb5e53826d48a8.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/arrow_down.017bc6ba3fc25503e5eb5e53826d48a8.png",
+    "status": 200,
+    "bytes": 9456,
+    "sha256": "6deca32b56b97fa1fa87facd6996b46cc45190a553400e7febdf1d2093099b57"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/error.d1ea1496f9057eb392d5bbf3732a61b7.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/error.d1ea1496f9057eb392d5bbf3732a61b7.png",
+    "status": 200,
+    "bytes": 469,
+    "sha256": "c15ec72a74d13957211808313d5c35deb7f7606c6d22dbddceb0000d4e0547ad"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/file.19eeb73b9593a38f8e9f418337fc7d10.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/file.19eeb73b9593a38f8e9f418337fc7d10.png",
+    "status": 200,
+    "bytes": 138,
+    "sha256": "a69a2edb5b6c60b8433d5b6d23c69f520ccd8a602f3f60e7996e489718bc175c"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/forward.d8b800c443b8972542883e0b9de2bdc6.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/forward.d8b800c443b8972542883e0b9de2bdc6.png",
+    "status": 200,
+    "bytes": 188,
+    "sha256": "708a79cf561b8a2a4850ce0254584d3a5231046be08fb7fadf4b6edfdb31178b"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/pkg.ab19f4cbc543357183a20571f68380a3.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/pkg.ab19f4cbc543357183a20571f68380a3.png",
+    "status": 200,
+    "bytes": 364,
+    "sha256": "27f4d229d440925bf7212d5dfffa45d596b2c7b3bb2905c96b839b2081a1dbeb"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/react-navigation/elements/back-icon-mask.0a328cd9c1afd0afe8e3b1ec5165b1b4.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/react-navigation/elements/back-icon-mask.0a328cd9c1afd0afe8e3b1ec5165b1b4.png",
+    "status": 200,
+    "bytes": 653,
+    "sha256": "9adb8c5efca932e2b732b293da813bd2e31952263056bce9e2517fec0f0b6a76"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/react-navigation/elements/back-icon.35ba0eaec5a4f5ed12ca16fabeae451d.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/react-navigation/elements/back-icon.35ba0eaec5a4f5ed12ca16fabeae451d.png",
+    "status": 200,
+    "bytes": 207,
+    "sha256": "84cf5eb3b20250f69e0e4733beb4da5f417f0682892a5ad1b5e62570753c21b1"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/react-navigation/elements/clear-icon.c94f6478e7ae0cdd9f15de1fcb9e5e55.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/react-navigation/elements/clear-icon.c94f6478e7ae0cdd9f15de1fcb9e5e55.png",
+    "status": 200,
+    "bytes": 220,
+    "sha256": "d03a5cd7a66ef10c5147916f9d5878b2d0a0a5ad46f405a31cd9967efaa55afd"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/react-navigation/elements/close-icon.808e1b1b9b53114ec2838071a7e6daa7.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/react-navigation/elements/close-icon.808e1b1b9b53114ec2838071a7e6daa7.png",
+    "status": 200,
+    "bytes": 141,
+    "sha256": "b1bc1810ca23e2c38cd76971c43591d726161061240d8b792b05757196ddb528"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/react-navigation/elements/search-icon.286d67d3f74808a60a78d3ebf1a5fb57.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/react-navigation/elements/search-icon.286d67d3f74808a60a78d3ebf1a5fb57.png",
+    "status": 200,
+    "bytes": 928,
+    "sha256": "5d075e0c287c4f4441b5b5c8fc7ea5cd27c11bb617ecea09755955bcb1889083"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/sitemap.412dd9275b6b48ad28f5e3d81bb1f626.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/sitemap.412dd9275b6b48ad28f5e3d81bb1f626.png",
+    "status": 200,
+    "bytes": 465,
+    "sha256": "acf691957a3bcce7d195856dce98a5cf14dce10bea28aa5c10b3550c078e23b5"
+  },
+  {
+    "url": "https://aarya.wtf/work/pp/assets/node_modules/expo-router/assets/unmatched.20e71bdf79e3a97bf55fd9e164041578.png",
+    "path": "original/work/pp/assets/node_modules/expo-router/assets/unmatched.20e71bdf79e3a97bf55fd9e164041578.png",
+    "status": 200,
+    "bytes": 4752,
+    "sha256": "efc79da3c4c97dfb1571bff6202958ab0529c5aa31e8392600578b3e359d1447"
+  }
+]

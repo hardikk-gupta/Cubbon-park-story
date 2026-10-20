@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_fonts/a623147874f5bd4e3f40.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_fonts/f57c41b0eb84cc4cd2fc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_fonts/c921b0a4deab0e7f85d0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bowlby One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_fonts/0fa80b4d36277455d5e1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bungee';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_fonts/081450ba228c97ae5ac9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cherry Bomb One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_fonts/156e63de92e46f87345d.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_fonts/d90cebc85b32d58df077.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(/_fonts/06fec7511da045089252.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_fonts/7e0a56187ecaff85f3d0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_fonts/43fed5b79e5dd439a13e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik Mono One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_fonts/41630f570be50c72cc5c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Shrikhand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_fonts/28fc6648a6f0058fcd08.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_fonts/8ebc3d71038a4b1e5df3.ttf) format('truetype');
+}

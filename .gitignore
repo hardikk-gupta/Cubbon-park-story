@@ -1,0 +1,5 @@
+/tooling/node_modules/
+**/__pycache__/
+*.py[cod]
+/evidence/server.log
+.DS_Store
