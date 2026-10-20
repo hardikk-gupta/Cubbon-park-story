@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "local",
+  "cleanUrls": false,
+  "rewrites": [
+    {
+      "source": "/work/:project(goalkeeper|prd-loop|phonepe|ride-through-the-valley|dayro|lamad|transporter|quickmart)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "connect-src 'self'; form-action 'self'"
+        }
+      ]
+    }
+  ]
+}

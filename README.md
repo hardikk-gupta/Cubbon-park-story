@@ -20,6 +20,14 @@ Open **http://localhost:8000/**. Other entry points:
 
 Requires WebGL 2 for the picnic; the original HTML includes a text fallback. The local preview server blocks external fetch/form submissions, so the email lead form cannot send to the author's Supabase backend. Public external links remain links. Linked external products are outside the local archive.
 
+## Vercel deployment
+
+Import this repository with **Root Directory** set to the repository root (leave it empty in Vercel). The checked-in `vercel.json` sets the static output directory to `local/` and disables installation/build steps. The repository root contains research material rather than the site's entry point, so deploying it without this configuration can return `404 NOT_FOUND` at `/`.
+
+The configuration also routes `/work/<project>` to the picnic entry point, while preserving `/work/<project>.html` as a standalone letter and `/minimal/` as a separate page. External fetch/form submissions remain blocked, matching the local preview. No Python server is needed on Vercel.
+
+After changing deployment configuration, use the newly created deployment URL or the project's updated production alias. A previous deployment's unique URL continues to refer to that earlier deployment.
+
 ## Where to begin
 
 | Path | Contents |
