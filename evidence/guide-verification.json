@@ -1,0 +1,13 @@
+{
+  "title": "How the picnic works — an interactive code guide",
+  "chapters": 14,
+  "paper": "Turn 144° · Bend 1.7 · Actual ordinary-paper mesh: 48 × 8 cells",
+  "shadow": "translate(40 51.11111111111111)",
+  "motion": "Target changed to 1. Damping approaches; the spring carries momentum.",
+  "mobile": {
+    "viewport": 390,
+    "document": 390
+  },
+  "errors": [],
+  "failedResponses": []
+}

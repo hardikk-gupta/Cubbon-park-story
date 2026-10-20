@@ -30,6 +30,8 @@ After changing deployment configuration, use the newly created deployment URL or
 
 ## Where to begin
 
+For a plain-language walkthrough, read [HOW-IT-WORKS.md](HOW-IT-WORKS.md), or open **`/guide/`** on the deployed/local site. The illustrated guide includes controls for paper bending, damped/spring motion and height-dependent shadows, followed by an explanation of every major interaction and module.
+
 | Path | Contents |
 | --- | --- |
 | [BREAKDOWN.md](BREAKDOWN.md) | Lighting, shadows, motion, interactions, routes, responsive behavior and reuse notes |

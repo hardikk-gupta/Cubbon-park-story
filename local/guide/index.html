@@ -1,0 +1,281 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="An illustrated, interactive explanation of the recovered aarya.wtf frontend: paper, shadows, leaves, butterflies and smooth motion."><title>How the picnic works — an interactive code guide</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="guide.css"></head><body><header><div class="eyebrow">Aarya.wtf · Recovered frontend study</div><h1>Paper, sunlight,<br>and a little mathematics.</h1><p>How a browser turns flat artwork into a picnic you can touch. A guided explanation of the actual code, with three experiments you can control.</p><p class="links"><a href="/">Explore the picnic ↗</a> &nbsp;·&nbsp; <a href="https://github.com/hardikk-gupta/Cubbon-park-story/blob/main/HOW-IT-WORKS.md">Read on GitHub ↗</a></p></header><main><nav id="contents" aria-label="Guide chapters"><strong>Inside this guide</strong></nav><article><h1>A guided tour of the picnic website</h1>
+<p>This explains the recovered aarya.wtf frontend in ordinary language. The interactive edition is at <code>/guide/</code> in the deployed site, or <code>http://localhost:8000/guide/</code> when running <code>python serve.py</code>. The small experiments in that guide are teaching models, separate from the original renderer. Exact deployed algorithms remain in <code>readable/</code> and <code>shaders/</code>.</p>
+<h2>First: what are we actually looking at?</h2>
+<p>It is a mixture of <strong>real-time 3D, generated 2D artwork, normal HTML, image files and video</strong>. Those layers cooperate, which is why it is difficult to identify the technique just by looking.</p>
+<table>
+<thead>
+<tr>
+<th>Visible thing</th>
+<th>What it actually is</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Turning postcard</td>
+<td>A triangle mesh deformed in 3D by a vertex shader</td>
+</tr>
+<tr>
+<td>Printing on the postcard</td>
+<td>Canvas-generated artwork uploaded as a texture</td>
+</tr>
+<tr>
+<td>Moving forest/person/handwriting inside the postcard</td>
+<td>MP4 frames composited into that texture; poster images provide a fallback</td>
+</tr>
+<tr>
+<td>Project-stamp illustrations</td>
+<td>WebP images combined with generated postmarks, paper and back-side print</td>
+</tr>
+<tr>
+<td>Long case-study letter</td>
+<td>HTML/CSS inside an iframe, animated into view</td>
+</tr>
+<tr>
+<td>Stamp moving onto that letter</td>
+<td>Temporary DOM canvases with matching artwork, animated with the Web Animations API</td>
+</tr>
+<tr>
+<td>Red woven cloth</td>
+<td>Procedural fragment-shader drawing and shading</td>
+</tr>
+<tr>
+<td>Coffee, camera, radio, cap</td>
+<td>Procedurally constructed 3D meshes with materials</td>
+</tr>
+<tr>
+<td>Falling leaves and flowers</td>
+<td>Canvas-painted transparent textures on curved 3D surfaces</td>
+</tr>
+<tr>
+<td>Butterfly</td>
+<td>Generated wing/body textures; separate wing surfaces rotate in 3D</td>
+</tr>
+<tr>
+<td>Moving tree shade</td>
+<td>A procedural canopy mask sampled by the scene&#39;s shaders</td>
+</tr>
+<tr>
+<td>Menu, buttons and toolbars</td>
+<td>DOM elements with CSS transitions, images and a few SVG details</td>
+</tr>
+</tbody></table>
+<p>So the answer to “SVG, PNG or 3D?” depends on the layer. <strong>The turning paper is real-time 3D geometry. Its printing is a texture. The full-screen letter is HTML.</strong> There is no prerecorded video of the whole interaction, and the main scene does not use Three.js, GSAP or a physics engine.</p>
+<h2>1. The picture is made in two different workshops</h2>
+<p>Imagine making a physical postcard. First a printer puts ink onto flat paper. Then you pick up that paper, bend it and hold it under a lamp.</p>
+<p>The code does the same thing:</p>
+<ol>
+<li><code>print.js</code> draws the flat printed design into an offscreen Canvas 2D surface.</li>
+<li><code>Scene.texture()</code> copies those pixels to the GPU as a <strong>texture</strong>.</li>
+<li>A <strong>mesh</strong>, made of triangles, supplies the shape of the paper.</li>
+<li>A <strong>vertex shader</strong> moves the mesh points to bend, peel, turn or crumple it.</li>
+<li>A <strong>fragment shader</strong> colors the pixels, combining the print with illumination, shadow and sheen.</li>
+</ol>
+<p>An offscreen canvas is a work surface, not another visible page. A texture is an image the GPU can sample. A vertex is a corner of a triangle. A shader is a small program run by the GPU. A surface normal is an arrow pointing out of the surface; it tells the lighting code which way that patch faces.</p>
+<p>The same flat texture can appear perfectly still, curled, upside down or crumpled because the texture and the shape are separate.</p>
+<h2>2. How the paper actually bends</h2>
+<p>The ordinary paper mesh is divided into <strong>48 × 8 cells</strong>, giving <strong>768 triangles</strong>. The mesh is denser across the bending direction. A flat rectangle made of only two triangles would not bend smoothly.</p>
+<p>Each vertex has a local position along the sheet. The shader maps that flat position onto a circular arc. In descriptive names, its bend calculation is:</p>
+<pre><code class="language-js">angle = startingAngle + curvature * distanceAlongPaper;
+x = (sin(angle) - sin(startingAngle)) / curvature;
+z = (cos(startingAngle) - cos(angle)) / curvature;
+</code></pre>
+<p>This is the shader&#39;s mathematical shape, expressed as JavaScript-like pseudocode. When curvature is nearly zero, a separate straight-sheet calculation avoids dividing by zero. Adjacent vertices use the same continuous function, so there are no disconnected pieces.</p>
+<p>The normal changes along the arc as well. Consequently the bright area, dark area and sheen move with the bend. Merely distorting a flat image would not automatically produce that relationship.</p>
+<div class="lab-slot" data-lab="paper"></div>
+
+<h3>Peeling is a different deformation</h3>
+<p>For a peel, the code defines a fold direction, fold line and cylinder radius. Vertices before the line stay on the original side. Vertices after it wrap around the cylinder. Past a half-turn, the paper lies back over itself. The back print appears on the exposed reverse face.</p>
+<p>This explains why a stamp can roll over itself rather than simply rotate like a solid board. See <code>paperVertex.glsl</code> and <code>picnic.js</code>&#39;s <code>Ms()</code>.</p>
+<h3>Crumpling needs more geometry</h3>
+<p>The crumpling mesh uses <strong>160 × 160 cells: 51,200 triangles</strong>. It maps a square toward a disc and then around a sphere. Different angular regions open at different rates; noise-based facets and crease shading keep it from resembling a perfectly smooth ball. This is a deliberately designed deformation, rather than a general paper-collision simulation.</p>
+<p>Leaves and petals use another grid, <strong>14 × 14 cells</strong>, with a quadratic surface for lengthwise curl, crosswise cupping and twist.</p>
+<h2>3. What makes the turning feel soft</h2>
+<p>Position alone is not enough. The controller coordinates rotation, elevation, bend, highlights and shadows throughout the turn.</p>
+<p>At the middle of a flip, the postcard rises in an arc; its height includes <code>230 * sin(π * progress)</code>. Its bend reacts to turning speed and hover. Near the end, those changes settle instead of stopping abruptly.</p>
+<p>The curvature is driven by a damped spring. With readable names, the recovered update is:</p>
+<pre><code class="language-js">velocity += ((target - curvature) * 130 - velocity * 13) * dt;
+curvature += velocity * dt;
+</code></pre>
+<p>The first term pulls toward the desired bend. The second removes motion over time. When the target changes quickly, the surface keeps a little momentum and then relaxes. That lag is part of the impression of flexible material.</p>
+<p>This is an artistic spring for the sheet&#39;s curvature. It is not a full physical model of paper fibers.</p>
+<h2>4. How scrolling becomes a camera movement</h2>
+<p>The browser still scrolls normally, but the visible scene is a fixed canvas. A tall <code>#track</code> supplies the scroll distance. The controller reads <code>scrollY / innerHeight</code> and interprets it as progress through a storyboard.</p>
+<p>At the start, progress turns the postcard. Later it peels a stamp and moves the camera horizontally past the work row. Later still the camera travels down the testimonials and contact sheet. Your wheel moves vertically; the virtual camera is free to move in another direction.</p>
+<p>Raw input is smoothed:</p>
+<pre><code class="language-js">const dt = Math.min((now - previous) / 1000, 0.05);
+current += (target - current) * (1 - Math.exp(-7 * dt));
+</code></pre>
+<p><code>target</code> is what the input requests. <code>current</code> is what the camera has reached. The closer it gets, the smaller each correction becomes. The <code>dt</code> term accounts for elapsed time, so it is less dependent on refresh rate than “move 10% every frame.”</p>
+<div class="lab-slot" data-lab="motion"></div>
+
+<p><code>requestAnimationFrame</code> schedules the main scene update near the browser&#39;s next paint. It does not guarantee 60 or 120 fps: expensive shaders can still exceed a device&#39;s budget. The site&#39;s smoothness comes from the motion design plus rendering choices, not from the scheduler alone.</p>
+<p>The project row also has <strong>dwell time</strong>. Within each project interval, the camera rests initially, moves through the middle portion, then rests again. It gives you time to see and click the stamps.</p>
+<h2>5. The page-opening transition is a carefully timed handoff</h2>
+<p>There are two distinct paper-like effects: the 3D postcard turning in the picnic and the HTML case-study letter arriving over it.</p>
+<p>When a project opens, <code>case.js</code> does this:</p>
+<ol>
+<li>Obtain the selected stamp&#39;s print and screen rectangle from <code>Picnic.art()</code> and <code>Picnic.rect()</code>.</li>
+<li>Create <code>#fly</code>, a temporary DOM object containing canvases of the front and back artwork.</li>
+<li>Hide the original scene stamp. The copy starts at the same place, size and angle, so the substitution is hard to see.</li>
+<li>Lift that copy about 26 CSS pixels and partly straighten it over 420 ms.</li>
+<li>Load the case-study HTML in an iframe. Wait for it to be ready.</li>
+<li>Slide the letter upward from <code>105vh</code>, removing its initial 2.5-degree rotation, over 1000 ms.</li>
+<li>Ask <code>Letter.slot()</code> where the letter&#39;s stamp belongs. Send the flying copy along an elevated path to that position over 760 ms.</li>
+<li>Compress its scale slightly to <code>.97</code> and settle over 180 ms. Reveal the letter&#39;s own stamp and remove the flying copy.</li>
+</ol>
+<p>The durations overlap; they should not be added as one strictly sequential timeline. Different Bézier curves control the lift, letter entrance, travel and landing.</p>
+<p>This is a <strong>shared-object transition</strong>: the artwork stays visually continuous while its renderer changes from WebGL to DOM. Closing coordinates the reverse handoff. Browser history updates to <code>/work/&lt;project&gt;</code> without discarding the picnic; the standalone content lives at <code>/work/&lt;project&gt;.html</code>.</p>
+<h2>6. The shadows work because they agree with the objects</h2>
+<p>The most important property is consistency. If a sheet lifts, its shadow separates. If it curls, the shadow silhouette changes. If a leaf lands on the sheet, the sheet receives its shadow. All of this refers to the same geometry and light direction.</p>
+<h3>A shared sun</h3>
+<p>The direction is <code>normalize(vec3(-.36, -.46, .81))</code>. Every material uses it. There is slightly cool ambient illumination and warm sunlight. Shading never becomes an unrelated black overlay on one object while its neighbor is lit from another direction.</p>
+<h3>Projecting the silhouette</h3>
+<p>The shadow vertex shader calculates where a point would project along that light:</p>
+<pre><code class="language-glsl">vec2 shadowPosition = worldPosition.xy
+                    - light.xy / light.z * worldPosition.z;
+</code></pre>
+<p>The visible and shadow passes use the same deformed vertices. Greater height increases displacement. Transparent parts of a leaf texture do not cast a solid rectangular shadow.</p>
+<div class="lab-slot" data-lab="shadow"></div>
+
+<h3>Sharp near contact, soft when lifted</h3>
+<p>The renderer builds two blurred shadow masks: a narrow one and a broad one. Each blur is split into horizontal and vertical passes, with 13 weighted samples per pass.</p>
+<p>It approximates the caster&#39;s height and blends between those masks according to the separation from the receiving surface. This is why touching edges feel anchored but a raised sheet appears to float. The receiver height matters: the cloth and a postcard lying above it do not receive identical projections.</p>
+<p>This custom screen/world-space approximation is convincing and economical. It is not ray tracing or a guarantee of physically exact shadows for all geometry.</p>
+<h3>Tree shadows are another system</h3>
+<p><code>canopy.glsl</code> constructs branch/leaf silhouettes mathematically. Several slow sine waves bend them by different amounts. The shadow field is sampled by the cloth, paper and solid props using consistent light-space positions.</p>
+<p>Two edge variants let higher surfaces receive a crisper pattern. The <code>dapple</code> parameter can weaken tree shade on something lifted for reading. These are deliberate art-direction choices.</p>
+<h3>Ordinary controls still use CSS</h3>
+<p>The menu stamps and pills use warm tinted <code>drop-shadow</code> or <code>box-shadow</code>. Typically there is a tight layer plus a wider, fainter layer. Hover increases both lift and shadow extent. Those controls do not require the WebGL shadow pipeline.</p>
+<h2>7. Why the cloth looks woven and reacts to your hand</h2>
+<p>The cloth is not a giant background JPEG. Its fragment shader draws alternating warp/weft crossings, thread profiles and red/cream bands. Noise breaks the uniformity. A precomputed field supplies larger creases, folds and slack; changes in the implied surface normal affect brightness.</p>
+<p>Pointer movement contributes up to 12 recent displacement impulses. Each affects a soft region around the pointer. The weave moves, and the calculated wrinkle slope changes the light response. The impulse grows quickly, fades and slightly reverses as it settles. This is a localized visual deformation field, not a full cloth simulator.</p>
+<p>This matters because a dark circle following the cursor would suggest an indentation. Here the moving thread coordinates and changing highlights suggest fabric being lightly disturbed.</p>
+<h2>8. Every falling leaf has a small life story</h2>
+<p><code>nature.js</code> paints leaves into Canvas 2D textures. It includes fig, mango, young and dry variants, plus flower types. Shape, veins, stalks, front/back color and seeded irregularities are drawn in code. These textures are uploaded once and reused on curved surfaces.</p>
+<p>An individual leaf stores position, size, height, drift speed, oscillation phase, rotation, curl/cup/twist, age and state.</p>
+<p>Its initial fall is designed analytically: downward drift plus sideways sine-wave oscillation, tilt and occasional roll. Different phases and parameters stop the motion from looking synchronized. Later detach/drop states integrate a gravity-like acceleration; the initial descent should not be mistaken for a full aerodynamic simulation.</p>
+<p>The states are:</p>
+<pre><code class="language-text">air -&gt; rest on cloth, paper or prop
+rest -&gt; slide when pushed
+rest -&gt; drop when its supporting surface becomes unstable
+slide -&gt; rest, or drop when it moves off an edge
+</code></pre>
+<p>To land, the code checks stable support surfaces near the leaf and chooses the highest suitable surface. <code>Scene.point()</code> evaluates the same deformation used for rendering. Neighboring surface points yield a normal, so a resting leaf can align to the surface rather than remain horizontal.</p>
+<p>The leaf stores its landing coordinates relative to its support. Settling adds a short damped wobble, lasting about .55 seconds. If that support starts turning, the leaf can detach and fall instead of sticking impossibly to it.</p>
+<p>Move the pointer quickly near a resting leaf and it receives a push. Sliding velocity and spin decay. Leaves are capped at four on smaller viewports or six on larger ones; scheduled spawn opportunities are about 7–13 seconds apart after the initial opportunity. This creates occasional environmental activity rather than a continuous particle shower.</p>
+<p>Their shadows come from the shared renderer. There is no separate animation trying to keep a shadow PNG under each leaf.</p>
+<h2>9. The butterfly really lands and takes off</h2>
+<p><code>butterflies.js</code> draws wing patterns with Canvas paths, gradients, veins and spots. The recovered configuration maintains <strong>one active butterfly when enabled</strong>. It combines a body surface with separate left and right wing surfaces.</p>
+<p>The wings rotate in opposite directions around the body. Their positions also change with the flap angle, keeping the hinges together. This is a small articulated 3D object built from textured surfaces, not a GIF.</p>
+<p>Its behavior has two main states:</p>
+<ul>
+<li><strong>Fly:</strong> steer toward a target while adding sideways oscillation, wing flaps and height bobbing. Smoothly rotate toward the direction of travel. Occasionally choose a stable object as a landing target.</li>
+<li><strong>Sit:</strong> attach to that surface, move with it and slowly open/close the wings. Leave after a short rest, when the support moves, or when a moving pointer comes close.</li>
+</ul>
+<p>Targets typically last 3–7 seconds; resting intervals are 4–10 seconds. Cursor avoidance operates within roughly 110 screen pixels, scaled on small viewports. Approach speed and height fall as it nears a landing point. These conditional behaviors are why it appears responsive rather than following a fixed loop.</p>
+<h2>10. The objects around the postcard are interactive too</h2>
+<p><strong>Camera.</strong> Clicking plays the optional shutter sound and emits a photo. The photo moves out of the camera, drops toward the cloth and blends from an undeveloped texture to the developed JPEG. Five archived photos supply the images. Clicking a print brings it forward for inspection; scrolling away or releasing lets it return. The controller limits the number of live prints.</p>
+<p><strong>Coffee.</strong> Clicking lifts/tilts the cup through a sip animation and changes the liquid level through stored stages. The liquid surface and side geometry are transformed; ice follows the remaining level. After the last stage, the next action refills it. This is stateful geometry animation, not fluid simulation. The glass uses opacity, reflection and Fresnel; a caustic artwork adds a patch of gathered light under it.</p>
+<p><strong>Radio.</strong> Clicking toggles ambience. A wheel and needle ease toward the playing/resting state. The sound pill controls the same state, so the two interfaces stay synchronized.</p>
+<p><strong>Cap.</strong> Clicking tips/flips it over a custom pivot. The code computes clearance so it does not simply rotate through the ground. A small exponentially decaying sine gives the final wobble.</p>
+<p><strong>Postcard and project stamps.</strong> Hover lifts and tilts them according to pointer position, and introduces bow/curl. Leaving the target eases those parameters back. Project entry can add a small bounce. Artwork, shadows and surface normals all follow the new pose.</p>
+<p><strong>Testimonials and client stickers.</strong> Generated print becomes scene textures. Hover and read states reuse lift, tilt, enlargement and reduced dapple for readability.</p>
+<p><strong>Navigation stamps.</strong> The sheet grows from an origin near its trigger. The five destination stamps enter with 60 ms-spaced delays, different small resting angles and overshooting curves. Hover straightens and lifts a stamp; active press compresses it. The current section receives a postmark. These are DOM/CSS interactions.</p>
+<p><strong>Contact sheet.</strong> Email copies an address, social stickers open their links, and the résumé sticker opens the PDF. Copied/saved feedback appears as ink stamps. The blank-logo sticker positions an email form near its anchor. The captured frontend calls an external Supabase REST endpoint; our preview/deployment blocks external submissions and does not include its backend internals.</p>
+<p><strong>Colouring page.</strong> Canvas 2D stores brush strokes separately from the line art. Six colors, three brush sizes, erasing, clear and PNG export change that artwork. A dirty flag means the GPU texture updates when painting changes, rather than rebuilding unchanged paint every frame. Pointer capture keeps an active stroke coherent; touch handling distinguishes painting from page scrolling.</p>
+<p><strong>Loading and idle hints.</strong> The loader tosses a two-sided stamp while assets/fonts prepare. Its ellipse shadow shrinks/fades as the stamp rises. Readiness finishes the toss and sends it offscreen while the background fades. Idle scroll/tap hints are shown according to scene position and input capability.</p>
+<p><strong>Sound.</strong> The Web Audio graph mixes looping garden audio and short effects. Volume ramps avoid abrupt cuts. It respects the browser&#39;s requirement for a user gesture before audio playback, and stores the sound preference locally.</p>
+<h2>11. What happens during a frame</h2>
+<p>The main controller follows this dependency order:</p>
+<pre><code class="language-text">time, scroll, pointer and viewport
+        -&gt; smoothed camera and interaction states
+        -&gt; paper transforms, props, leaves and butterfly
+        -&gt; animated tree-shadow field
+        -&gt; projected object-shadow mask
+        -&gt; narrow and broad shadow blurs
+        -&gt; cloth, solid props, textured paper, transparent materials
+        -&gt; final pixels on the fixed scene canvas
+</code></pre>
+<p>Texture generation mostly happens during loading/resizing or when content changes. Geometry can stay on the GPU while uniforms such as bend, position and time change. Video textures update when a new frame is available and relevant. The controller caps pixel ratio at two, uses lower-resolution shadow buffers, culls selected offscreen objects and caps nature counts.</p>
+<p>Mipmaps and anisotropic filtering help tilted print stay readable and reduce shimmer. Transparent meshes draw late with depth writes disabled. These are practical rendering decisions, not just animation decisions.</p>
+<p>There is still a cost: the shaders are custom and some are expensive; rebuilding print can be substantial. Software-rendered browser capture was slow. We verified behavior, not a guaranteed production frame rate on every phone.</p>
+<h2>12. Where everything lives</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Think of it as</th>
+<th>Change this when you want to…</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>picnic.js</code></td>
+<td>Director</td>
+<td>Change scene order, camera, layout, project data or interaction targets</td>
+</tr>
+<tr>
+<td><code>scene.js</code></td>
+<td>Renderer</td>
+<td>Change projection, mesh deformation, shaders or render passes</td>
+</tr>
+<tr>
+<td><code>print.js</code></td>
+<td>Printing workshop</td>
+<td>Change paper, typography, stamp print, postmarks or contact art</td>
+</tr>
+<tr>
+<td><code>paint.js</code></td>
+<td>Illustration helpers</td>
+<td>Change procedural painted artwork and SVG helpers</td>
+</tr>
+<tr>
+<td><code>props.js</code></td>
+<td>Object workshop</td>
+<td>Change coffee, cap, camera, radio and their actions</td>
+</tr>
+<tr>
+<td><code>nature.js</code></td>
+<td>Falling nature controller</td>
+<td>Change leaf/flower art, spawning, landing or pushes</td>
+</tr>
+<tr>
+<td><code>butterflies.js</code></td>
+<td>Butterfly controller</td>
+<td>Change wings, flight, resting and pointer response</td>
+</tr>
+<tr>
+<td><code>colour.js</code></td>
+<td>Drawing tool</td>
+<td>Change line art, brush behavior and export</td>
+</tr>
+<tr>
+<td><code>sound.js</code></td>
+<td>Sound mixer</td>
+<td>Change ambience/effects and gain ramps</td>
+</tr>
+<tr>
+<td><code>case.js</code></td>
+<td>Letter transition coordinator</td>
+<td>Change stamp handoff, iframe animation and history</td>
+</tr>
+<tr>
+<td><code>index.html</code></td>
+<td>Scene shell and controls</td>
+<td>Change loading/menu/toolbar CSS or accessible text</td>
+</tr>
+<tr>
+<td><code>work/*.html</code></td>
+<td>Actual project letters</td>
+<td>Change project content and embedded demonstrations</td>
+</tr>
+<tr>
+<td><code>work/more.js</code></td>
+<td>Next-project carousel</td>
+<td>Change cycling, center emphasis and hover slowdown</td>
+</tr>
+</tbody></table>
+<p><code>original/</code> preserves downloaded files. <code>readable/</code> formats the code without restoring the original long variable names. <code>shaders/</code> exposes 14 shader sources directly. <code>local/</code> is the deployed mirror with local fonts. <code>evidence/</code> holds screenshots and verification records. The research folders explain the implementation; they are not all executed by the website.</p>
+<p>For exact source landmarks, use <a href="https://github.com/hardikk-gupta/Cubbon-park-story/blob/main/CODE-MAP.md">CODE-MAP.md</a>. For lighting constants, pass details and transition timings, use <a href="https://github.com/hardikk-gupta/Cubbon-park-story/blob/main/BREAKDOWN.md">BREAKDOWN.md</a>. Neither the author&#39;s original repository nor unpublished backend code was recovered.</p>
+<h2>13. What to learn from this implementation</h2>
+<p>The transferable lesson is coordination. Shape, print, light, shadow, timing and response all describe the same object. A convincing paper effect needs more than a curved silhouette; a convincing leaf needs more than a downward path; a convincing transition needs continuity across its old and new locations.</p>
+<p>To build a similar experience, start with one printed plane, one light and a matching shadow. Add bend and its normals. Add input damping and a spring. Only then add camera choreography, the DOM handoff and environmental behavior. That sequence lets you see which subsystem creates each part of the illusion.</p>
+</article></main><footer>Based on the public frontend captured on 2026-10-20 UTC. Experiments illustrate selected concepts; the portfolio's recovered code is preserved separately. The original repository and backend were not recovered.</footer><script src="guide.js"></script></body></html>
